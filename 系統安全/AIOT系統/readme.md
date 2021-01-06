@@ -1,3 +1,30 @@
+# 專案
+```
+https://volumio.org/
+
+Raspberry Pi audio streaming 101
+by John DarkoJohn Darko
+https://darko.audio/2020/01/raspberry-pi-audio-streaming-101/
+
+https://www.hifiberry.com/
+
+Get started with the Raspberry Pi High End Audio DAC
+觀看次數：99,210次•2018年4月5日
+https://www.youtube.com/watch?v=mUY1pOv7c1E
+
+Use Raspberry Pi 4 to play HiFi music with InnoMaker HiFi DAC Hat
+觀看次數：48,883次•2019年7月3日
+https://www.youtube.com/watch?v=XkYeylbBHNk
+
+
+Raspberry Pi As Hi-Fi Player With RuneAudio
+https://www.instructables.com/Raspberry-Pi-as-Hi-Fi-player-with-RuneAudio/
+https://www.runeaudio.com/
+http://www.rpimusicplayer.com/
+
+https://www.justboom.co/
+https://www.hifiberry.com/shop/boards/hifiberry-dac2-hd/
+```
 # 參考書目
 ```
 AIOT 與 OpenCV 實戰應用：Python、樹莓派、物聯網與機器視覺
