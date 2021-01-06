@@ -7,7 +7,10 @@ ISBN-13:9789863126232
 ```
 
 ```
-
+TinyML｜TensorFlow Lite 機器學習 : 應用 Arduino 與低耗電微控制器
+Pete Warden, Daniel Situnayake 賴屹民 譯  歐萊禮  2020-07-31
+ISBN:9865025353
+ISBN-13:9789865025359
 ```
 
 ```
