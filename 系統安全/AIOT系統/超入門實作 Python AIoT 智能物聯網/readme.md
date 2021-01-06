@@ -2,6 +2,7 @@
 ```
 20 Best Operating Systems You Can Run on Raspberry Pi in 2020
 May 12, 2020
+https://www.fossmint.com/operating-systems-for-raspberry-pi/
 
 2. OSMC
 OSMC (Open Source Media Center) is a free, simple, open-source, and easy-to-use standalone Kodi OS 
@@ -12,6 +13,12 @@ RISC OS is a unique open-source OS designed specifically for ARM processors by t
 It is neither related to Linux nor Windows and is being maintained by a dedicated community of volunteers.
 
 5. Windows IoT Core
+9. Ubuntu Core
+11. Ubuntu Mate
+12. Domoticz
+Domoticz is a free and open-source Home Automation System designed to enable users monitor and configure various devices such as switches, sensors and meters like temperature, Electra, gas, water, UV, wind, etc. and notifications/alerts can be set to any device.
+
+16. Kali Linux
 ```
 ```
 Raspbian ===> Raspberry Pi OS
