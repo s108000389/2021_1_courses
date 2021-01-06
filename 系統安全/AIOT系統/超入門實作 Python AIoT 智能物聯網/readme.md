@@ -1,8 +1,25 @@
-#
+# 樹莓派Raspberry Pi　常用作業系統
 ```
+20 Best Operating Systems You Can Run on Raspberry Pi in 2020
+May 12, 2020
 
+2. OSMC
+OSMC (Open Source Media Center) is a free, simple, open-source, and easy-to-use standalone Kodi OS 
+capable of playing virtually any media format.
+
+4. RISC OS
+RISC OS is a unique open-source OS designed specifically for ARM processors by the creators of the original ARM. 
+It is neither related to Linux nor Windows and is being maintained by a dedicated community of volunteers.
+
+5. Windows IoT Core
 ```
-
+```
+Raspbian ===> Raspberry Pi OS
+Raspberry Pi OS is a Debian-based operating system for Raspberry Pi. 
+Since 2015 it has been officially provided by the Raspberry Pi Foundation 
+as the primary operating system for the Raspberry Pi family of compact single-board computers.
+```
+# 課本內容
 ```
 Chapter 01 認識樹莓派
 1-1 樹莓派Raspberry Pi 的陣容
