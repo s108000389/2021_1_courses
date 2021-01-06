@@ -43,7 +43,7 @@ ISBN-13: 9789863124351
 第 7 章 使用手機遠端操控 GPIO
 第 8 章 電路設計趣味實作 (進階篇)
 ```
-
+# 
 
 ```
 使用 Raspberry Pi 學習電腦體系結構 (Learning Computer Architecture with Raspberry Pi)
@@ -51,7 +51,10 @@ Eben Upton, Jeff Duntemann, Ralph Roberts, Tim Mamtora, Ben Everard     清華�
 ISBN:7302487170
 ISBN-13:9787302487173
 ```
-
+```
+Writing Interpreters and Compilers for the Raspberry Pi Using Python
+英文/Anthony J. Dos Reis/CreateSpace Independent Publishing Platform
+```
 # python樹莓派
 ```
 Practical Python Programming for IoT November 2020
@@ -228,6 +231,12 @@ ISBN-13:9787302501718
 ```
 Lightweight Kubernetes with K3s [Video]  November 2019
 By Sangam Biradar , Walter Dolce
+```
+
+```
+Bitcoin and Lightning Network on Raspberry Pi: Running Nodes on Pi3, Pi4 and Pi Zero
+英文/Brakmic, Harris/Apress出版日期：2019-11-22
+
 ```
 
 ```
