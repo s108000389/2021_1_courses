@@ -1,5 +1,10 @@
 #
-
+```
+Hands-On Internet of Things with MQTT   October 2019
+By Tim Pulver
+https://github.com/packtpublishing/hands-on-internet-of-things-with-mqtt
+```
+#
 ```
 Raspberry Pi 好好玩不卡關!開直播‧玩 NAS ‧ 手機監測器 ‧ 遙控推土機 ‧ 自動PO文機 ‧ 防盜系統輕鬆搞定
 林和孝 著、莊永裕 譯   旗標科技  2017-07-06
