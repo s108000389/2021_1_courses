@@ -69,6 +69,18 @@ https://volumio.org/
 ```
 https://www.hifiberry.com/
 different HiFiBerry audio boards for the Raspberry Pi
+
+MakeHub.tw 露天賣場
+https://www.ruten.com.tw/user/index00.php?s=mcuapps_com
+
+MakeHub.tw含稅現貨 SparkFun JustBoom Digi HAT 樹莓派高級音質套件
+https://www.ruten.com.tw/item/show?21730779684273
+
+MakeHub.tw含稅公司貨 Seeed 基本螺絲套件盒，機器人、機構設計、DIY、Maker 必備
+https://www.ruten.com.tw/item/show?21525856367055
+
+德源科技 賣場
+https://www.ruten.com.tw/item/show?21406121589346
 ```
 # 參考書目
 ```
