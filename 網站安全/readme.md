@@ -1,14 +1,13 @@
 # 成績計算
 ```
-期中平時: 
-期中考: 
-期末平時:
-期末考: 雲端安全初探
+期中平時: 客戶端程式開發
+期中考: Javascript Framework技術報告
+期末平時: 伺服器程式開發
+期末考: 網站安全初探
 
 加分報告: 
-Sysinternals技術報告
-Powershell技術報告
-
+Javascript Framework技術報告
+XXX 伺服器程式開發
 ```
 
 # 教科書
