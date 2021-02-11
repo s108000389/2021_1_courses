@@ -9,7 +9,29 @@
 Javascript Framework技術報告
 XXX 伺服器程式開發
 ```
+# 專案開發 1 ==> CLUBHOUSE 開發
+```
+https://clubhouse.io/open-source-projects/
 
+https://docs.epsagon.com/docs/clubhouse
+```
+```
+Let's build an open-source Clubhouse!
+Aug 15, 2020
+https://openhouse.substack.com/p/lets-build-an-open-source-clubhouse
+```
+```
+CLUBHOUSE 開發
+https://github.com/bestony/neshouse/blob/master/readme.zh.md
+```
+```
+Django-Clubhouse
+https://pypi.org/project/django-clubhouse/
+```
+# 專案開發 2 ==> LINEBOT 開發
+```
+
+```
 # 教科書
 ```
 PHP 7&MySQL網站開發--超威範例集(第三版) 
@@ -188,6 +210,6 @@ SSDLC
 Web Security:如何強化網站安全??
 ```
 
-### 18 期末考
+# 18 期末考
 
 
