@@ -93,7 +93,10 @@ ISBN: 9865027291
 ISBN-13: 9789865027292
 ```
 
-# 推薦參考書 LINE Bot by Python 全攻略：從 Heroku 到 AWS 跨平台實踐
+# 推薦參考書
+```
+LINE Bot by Python 全攻略：從 Heroku 到 AWS 跨平台實踐
+```
 ```
 01 Outline：前言
 
