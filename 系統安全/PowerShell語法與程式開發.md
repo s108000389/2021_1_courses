@@ -1,6 +1,15 @@
 # PowerShell語法
 ```
 輸入與輸出
+  輸入 ==> Read-Host
+  $Age = Read-Host "Please enter your age"
+  $pwd_secure_string = Read-Host "Enter a Password" -AsSecureString
+  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-7.1
+  
+  輸出 ==> Write—Host  Write—Output
+  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-host?view=powershell-7.1
+  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/write-output?view=powershell-7.1
+  
 
 型別(Data Type)與資料結構
    Arrays|Hashtables|Lists, dictionaries, queues, and stacks
