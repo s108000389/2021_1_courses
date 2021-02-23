@@ -1,7 +1,6 @@
-# 開發環境
-## online 
+# JAVA 開發與執行環境
+## Online Java Compiler IDE
 ```
-Online Java Compiler IDE
 https://www.onlinegdb.com/online_java_compiler
 https://www.tutorialspoint.com/compile_java_online.php
 ```
@@ -77,6 +76,8 @@ Java SE 12 基礎必修課 (適用Java 12~10，涵蓋OCJP與MTA Java國際認證
 第16章 Lambda運算式
 
 附錄A MTA 98-388 Introduction to Programming Using Java國際認證模擬試題
+
+https://drive.google.com/drive/folders/1BCaXMDU6rn_hEXbXikkGca4dFsOFPs-D
 ```
 # Java 程式設計  參考書
 ```
