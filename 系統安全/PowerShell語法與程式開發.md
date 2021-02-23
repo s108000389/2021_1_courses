@@ -27,6 +27,11 @@
 
 PESTER 測試技術
 ```
+### 應用
+```
+Sample scripts for system administration
+https://docs.microsoft.com/en-us/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.1
+```
 # 教科書
 ```
 PowerShell 流程自動化攻略 
