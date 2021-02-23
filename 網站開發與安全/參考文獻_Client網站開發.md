@@ -62,6 +62,12 @@ https://www.tenlong.com.tw/products/9787121239489?list_name=sp
 JavaScript 大全, 6/e (JavaScript: The Definitive Guide: Activate Your Web Pages, 6/e)
 David Flanagan 著、黃銘偉 譯    歐萊禮   2012-04-23
 ```
+```
+最新 JavaScript 精緻範例字典 - 對應 ECMAScript 新語法規則
+繁體中文/楊東昱/旗標出版日期：2017-07-31
+
+旗標JS
+```
 # JAVAscript Framework
 ```
 超實用的jQuery代碼段(代碼逆襲) 超实用的jQuery代码段
