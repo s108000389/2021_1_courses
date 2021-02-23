@@ -7,8 +7,44 @@ https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019-essentia
 Windows Server 2019 系統與網站建置實務
 繁體中文/戴有煒/碁峰資訊出版日期：2019-09-03
 
+Chapter 1｜Windows Server 2019 概觀
+Chapter 2｜安裝 Windows Server 2019
+Chapter 3｜Windows Server 2019 基本環境
+
+Chapter 4｜本機使用者與群組帳戶
+Chapter 5｜建置虛擬環境
+Chapter 6｜建立 Active Directory 網域
+Chapter 7｜檔案權限與共用資料夾
+Chapter 8｜架設列印伺服器
+Chapter 9｜群組原則與安全設定
+Chapter 10｜磁碟系統的管理
+Chapter 11｜分散式檔案系統
+Chapter 12｜系統啟動的疑難排除
+Chapter 13｜利用 DHCP 自動指派 IP 位址
+Chapter 14｜解析 DNS 主機名稱
+Chapter 15｜架設 IIS 網站
+Chapter 16｜PKI 與 https 網站
+Chapter 17｜Server Core、Nano Server 與 Container
+```
+```
 Windows Server 2019 Active Directory 建置實務
 繁體中文/戴有煒/碁峰資訊出版日期：2019-12-25
+
+第1章 Active Directory網域服務(AD DS)
+第2章 建立AD DS網域
+第3章 網域使用者與群組帳戶的管理
+第4章 利用群組原則管理使用者工作環境
+第5章 利用群組原則部署軟體
+第6章 限制軟體的執行
+第7章 建立網域樹狀目錄與樹系
+第8章 管理網域與樹系信任
+第9章 AD DS資料庫的複寫
+第10章 操作主機的管理
+第11章 AD DS的維護
+第12章 將資源發佈到AD DS
+第13章 自動信任根CA
+附錄A AD DS與防火牆
+附錄B Server Core伺服器的管理
 ```
 
 # 微軟作業系統  聖經
