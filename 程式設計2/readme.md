@@ -29,3 +29,17 @@ Java SE 12 基礎必修課 (適用Java 12~10，涵蓋OCJP與MTA Java國際認證
 
 附錄A MTA 98-388 Introduction to Programming Using Java國際認證模擬試題
 ```
+# Java 程式設計  參考書
+```
+Java 最強入門邁向頂尖高手之路：王者歸來, 2/e (全彩版)
+洪錦魁   深智數位  2020-10-15
+https://www.tenlong.com.tw/products/9789865501587
+```
+# Java 程式設計  參考書
+```
+《好好學Java 從零基礎到項目實戰》附錄源碼
+清華大學出版社出版　　　　作者：歐陽燊
+https://github.com/aqi00/java
+
+T/程式設計/Java/ref/好好學Java 從零基礎到項目實.md
+```
