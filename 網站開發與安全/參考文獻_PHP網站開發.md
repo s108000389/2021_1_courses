@@ -5,9 +5,15 @@ PHP7 從入門到精通 (視頻教學版) PHP7从入门到精通:视频教学版
 清華大學   2017-01-01
 https://www.tenlong.com.tw/products/9787302456254
 ```
+```
+PHP從入門到精通（第5版）
+明日科技/清華大學出版日期：2019-12-01
+https://www.tenlong.com.tw/products/9787302541394
+```
 
 ```
-PHP 8 Revealed: Use Attributes, the Jit Compiler, Union Types, and More for Web Development&#8203;
+PHP 8 Revealed: 
+Use Attributes, the Jit Compiler, Union Types, and More for Web Development&#8203;
 英文/Engebreth, Gunnard/Apress出版日期：2021-02-18
 ```
 # Laravel PHP 主流框架(Web application framework)
@@ -22,7 +28,8 @@ https://www.tenlong.com.tw/products/9789864345304
 ```
 
 ```
-Laravel 啟動與運行, 2/e (Laravel : Up & Running: A Framework for Building Modern PHP Apps, 2/e)
+Laravel 啟動與運行, 2/e 
+Laravel : Up & Running: A Framework for Building Modern PHP Apps, 2/e
 Matt Stauffer 賴屹民 譯   歐萊禮  2020-01-06
 https://www.tenlong.com.tw/products/9789865023485
 ```
@@ -33,7 +40,8 @@ Laravel 之外的 MVC 架構選擇：用 ThinkPHP 聰明開發 PHP 專業網站
 ```
 # 進階學習主題
 ```
-PHP 網路服務, 2/e (PHP Web Services: APIs for the Modern Web, 2/e)
+PHP 網路服務, 2/e 
+PHP Web Services: APIs for the Modern Web, 2/e
 Lorna Jane Mitchell    歐萊禮    2016-10-18
 https://www.tenlong.com.tw/products/9789864761760
 ```
