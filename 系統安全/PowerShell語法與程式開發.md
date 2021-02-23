@@ -21,8 +21,11 @@
 ```
 ### 進階技術
 ```
-檔案處理: CSV JSON
+檔案處理: CSV Excel  JSON
+
 正則表達式: Regular expression
+
+PESTER 測試技術
 ```
 # 教科書
 ```
@@ -32,7 +35,7 @@ Adam Bertram 著 林班侯 譯  碁峰資訊  2020-12-09
 
 https://nostarch.com/powershellsysadmins
 
-Part I: Fundamentals  基本語法
+Part I: Fundamentals ==> 基本語法
 Chapter 1: Getting Started
 Chapter 2: Basic PowerShell Concepts
 Chapter 3: Combining Commands
@@ -40,6 +43,7 @@ Chapter 4: Control Flow
 Chapter 5: Error Handling
 Chapter 6: Writing Functions
 Chapter 7: Exploring Modules
+
 Chapter 8: Running Scripts Remotely
 Chapter 9: Testing with Pester
 
