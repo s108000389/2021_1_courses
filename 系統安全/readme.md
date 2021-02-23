@@ -11,8 +11,18 @@ Powershell技術報告
 ```
 ### 報告範本格式
 ```
-https://github.com/MyDearGreatTeacher/AI_and_security_2020
 
+```
+### 專題生報告
+```
+Raspberry Pi K8s 叢集報告
+
+Self-hosting Kubernetes on your Raspberry Pi
+https://blog.alexellis.io/self-hosting-kubernetes-on-your-raspberry-pi/
+
+Single-Node Kubernetes on Raspberry Pi with MicroK8s and Ubuntu
+Calvin Hartwell   on 27 February 2019
+https://ubuntu.com/blog/single-node-kubernetes-on-raspberry-pi-microk8s-ubuntu
 ```
 # 教學大綱
 ```
