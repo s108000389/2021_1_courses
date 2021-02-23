@@ -9,6 +9,11 @@
 Sysinternals技術報告
 Powershell技術報告
 ```
+### 報告範本格式
+```
+https://github.com/MyDearGreatTeacher/AI_and_security_2020
+
+```
 # 教學大綱
 ```
 各類型系統與系統安全概論:手機作業系統,伺服器作業系統(windows 與linux),雲端系統概論
