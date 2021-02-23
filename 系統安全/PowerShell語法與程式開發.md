@@ -8,23 +8,21 @@
 變數(Variables)
 
 運算子(Operators)與表示式
-   Arithmetic operators
-   Assignment operators
-   Comparison operators
-   Regular expression-based operators
-   Binary operators
-   Logical operators
-   Type operators
-   Redirection operators
+   Arithmetic |  Assignment | Comparison | Regular expression-based operators
+   Binary |  Logical  |  Type | Redirection operators
 
 流程控制(CONTROL FLOW)
+   決策結構 ==> The if Statement  | The else Statement | The elseif Statement | The switch Statement
+   重複(loop)結構 ==> foreach | for  |while  | do/while | do/until 
 
-函式與劇本
+函式(Functions)
+
+模組(Modules)
 ```
-進階技術
+### 進階技術
 ```
-檔案處理
-正則表達式
+檔案處理: CSV JSON
+正則表達式: Regular expression
 ```
 # 教科書
 ```
