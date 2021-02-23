@@ -121,6 +121,24 @@ Java 程式設計導論, 10/e
 Introduction to Java Programming : Comprehensive Version, 10/e
 Y. Daniel Liang 著、蔡明志 譯/碁峰出版日期：2015-04-14
 ```
+### Java 程式設計  參考書
+```
+Learn How to Code: The Complete Core Java Programming Course [Video]  November 2020
+By Mayur Deshmukh
+https://github.com/PacktPublishing/Learn-How-to-Code-The-Complete-Core-Java-Programming-Course
+```
+
+```
+Java Coding Problems  September 2019
+By Anghel Leonard
+https://github.com/packtpublishing/java-coding-problems
+```
+```
+The Java Workshop  October 2019
+By David Cuartielles , Andreas Göransson , Eric Foster-Johnson
+https://github.com/PacktWorkshops/The-Java-Workshop
+```
+
 # JAVA 證照
 ```
 MTA [入門]
