@@ -8,6 +8,28 @@ https://www.tutorialspoint.com/compile_java_online.php
 
 ## Linux OpenJDK
 
+# 範例 ==> 三步驟
+### 步驟一:撰寫JAVA程式
+```
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+     }
+}
+```
+### 步驟二:編譯JAVA程式
+```
+$javac HelloWorld.java
+
+==> 會產生HelloWorld.class
+```
+### 步驟三:執行JAVA程式(不需要寫副檔名 )
+```
+$java -Xmx128M -Xms16M HelloWorld
+
+Hello World
+```
 # 開發工具 IDEs (Integrated Development Environments) 
 ```
 IntelliJ IDEA
