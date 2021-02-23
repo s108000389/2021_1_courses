@@ -16,6 +16,20 @@ PHP 8 Revealed:
 Use Attributes, the Jit Compiler, Union Types, and More for Web Development&#8203;
 英文/Engebreth, Gunnard/Apress出版日期：2021-02-18
 ```
+# PHP Security
+```
+PHP 安全之道 項目安全的架構、技術與實踐
+欒濤  人民郵電   2019-11-01
+```
+```
+Web 安全開發指南 
+Security for Web Developers: Using JavaScript, HTML, and CSS
+Web安全开发指南
+約翰·保羅·米勒 (John Paul Mueller)
+人民郵電   2017-06-01
+
+https://www.tenlong.com.tw/products/9787115454089
+```
 # Laravel PHP 主流框架(Web application framework)
 ```
 https://laravel.com/
