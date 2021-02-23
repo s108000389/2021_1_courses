@@ -1,6 +1,6 @@
 # PowerShell語法
 ```
-
+輸入與輸出
 
 型別(Data Type)與資料結構
    Arrays|Hashtables|Lists, dictionaries, queues, and stacks
