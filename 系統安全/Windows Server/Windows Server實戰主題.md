@@ -69,6 +69,7 @@ Windows Server 2019 Active Directory 建置實務
 第11章 AD DS的維護
 第12章 將資源發佈到AD DS
 第13章 自動信任根CA
+第14章 利用 WSUS 部署更新程式
 附錄A AD DS與防火牆
 附錄B Server Core伺服器的管理
 ```
