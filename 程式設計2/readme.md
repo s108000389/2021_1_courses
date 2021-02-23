@@ -101,13 +101,13 @@ Java SE 12 基礎必修課 (適用Java 12~10，涵蓋OCJP與MTA Java國際認證
 
 https://drive.google.com/drive/folders/1BCaXMDU6rn_hEXbXikkGca4dFsOFPs-D
 ```
-# Java 程式設計  參考書
+### Java 程式設計  參考書
 ```
 Java 最強入門邁向頂尖高手之路：王者歸來, 2/e (全彩版)
 洪錦魁   深智數位  2020-10-15
 https://www.tenlong.com.tw/products/9789865501587
 ```
-# Java 程式設計  參考書
+### Java 程式設計  參考書
 ```
 《好好學Java 從零基礎到項目實戰》附錄源碼
 清華大學出版社出版　　　　作者：歐陽燊
@@ -115,7 +115,12 @@ https://github.com/aqi00/java
 
 T/程式設計/Java/ref/好好學Java 從零基礎到項目實.md
 ```
-
+### Java 程式設計  參考書
+```
+Java 程式設計導論, 10/e 
+Introduction to Java Programming : Comprehensive Version, 10/e
+Y. Daniel Liang 著、蔡明志 譯/碁峰出版日期：2015-04-14
+```
 # JAVA 證照
 ```
 MTA [入門]
