@@ -2,9 +2,11 @@
 ```
 https://www.w3schools.com/php/php_examples.asp
 ```
-###  PHP超全局變量   PHP Superglobals ==> 非常重要
+### PHP超全局變量   PHP Superglobals ==> 非常重要
 ### PHP表單驗證 PHP Form Validation ==> 非常重要
 ### PHP包含文件 PHP Include Files
+### PHP Cookies
+### PHP Sessions
 
 # PHP表單驗證
 ```
