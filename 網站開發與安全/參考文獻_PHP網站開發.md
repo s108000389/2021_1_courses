@@ -7,7 +7,8 @@ https://www.tenlong.com.tw/products/9787302456254
 ```
 
 ```
-
+PHP 8 Revealed: Use Attributes, the Jit Compiler, Union Types, and More for Web Development&#8203;
+英文/Engebreth, Gunnard/Apress出版日期：2021-02-18
 ```
 # Laravel PHP 主流框架(Web application framework)
 ```
@@ -25,7 +26,11 @@ Laravel 啟動與運行, 2/e (Laravel : Up & Running: A Framework for Building M
 Matt Stauffer 賴屹民 譯   歐萊禮  2020-01-06
 https://www.tenlong.com.tw/products/9789865023485
 ```
-
+## ThinkPHP 框架
+```
+Laravel 之外的 MVC 架構選擇：用 ThinkPHP 聰明開發 PHP 專業網站
+繁體中文/夏磊/深智數位出版日期：2020-05-20
+```
 # 進階學習主題
 ```
 PHP 網路服務, 2/e (PHP Web Services: APIs for the Modern Web, 2/e)
