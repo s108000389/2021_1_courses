@@ -67,6 +67,7 @@ David Flanagan 著、黃銘偉 譯    歐萊禮   2012-04-23
 繁體中文/楊東昱/旗標出版日期：2017-07-31
 
 旗標JS
+https://www.tenlong.com.tw/products/9789863124481
 ```
 # JAVAscript Framework
 ```
