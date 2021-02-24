@@ -12,8 +12,10 @@ D.資料結構與演算法
 ## 主題式應用
 ```
 視窗程式設計 ==> 使用AWT ==> 使用Swing  ==> 使用 JavaFX 
-網路程式設計 
-網站應用程式  ==> JSP | JAVA EE
+網路(NETWORK)程式設計
+
+網站(Web)應用程式  ==> JSP | JAVA EE   Spring
+手機(android)應用程式
 ```
 # A.基礎JAVA程式 ==> C  vs c++ vs C# 
 ```
