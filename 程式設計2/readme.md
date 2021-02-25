@@ -6,7 +6,10 @@ https://www.onlinegdb.com/online_java_compiler
 [好]https://www.tutorialspoint.com/compile_java_online.php
 ```
 ## Windows JDK 
-
+```
+oracle java
+https://www.oracle.com/tw/java/technologies/javase-downloads.html
+```
 ## Linux OpenJDK
 
 # 範例 ==> 三步驟
