@@ -12,6 +12,10 @@ https://www.oracle.com/tw/java/technologies/javase-downloads.html
 ```
 ## Linux OpenJDK
 
+### 作業
+```
+JDK 和 JRE有何差別? 適用時機?
+```
 # 範例 ==> 三步驟
 ### 步驟一:撰寫JAVA程式
 ```
