@@ -16,6 +16,10 @@ https://www.oracle.com/tw/java/technologies/javase-downloads.html
 ```
 JDK 和 JRE有何差別? 適用時機?
 ```
+### 上帝模式（God Mode）
+```
+https://www.techbang.com/posts/25163-how-to-open-windows-10-god-mode
+```
 # 範例 ==> 三步驟
 ### 步驟一:撰寫JAVA程式
 ```
