@@ -19,10 +19,66 @@ https://www.nasm.us/docs.php
 
 https://www.nasm.us/xdoc/2.15.05/html/nasmdoc0.html
 ```
+# 學習資源
+```
+Learn Assembly Language ==> NASM x86 assembly language on linux
+https://asmtutor.com/
+```
+# 範例練習 1
+```
+NASM Tutorial
 
-# 範例練習
+https://cs.lmu.edu/~ray/notes/nasmtutorial/
 ```
 
+```
+; ----------------------------------------------------------------------------------------
+; Writes "Hello, World" to the console using only system calls. Runs on 64-bit Linux only.
+; To assemble and run:
+;
+;     nasm -felf64 hello.asm && ld hello.o && ./a.out
+; ----------------------------------------------------------------------------------------
 
+          global    _start
 
+          section   .text
+_start:   mov       rax, 1                  ; system call for write
+          mov       rdi, 1                  ; file handle 1 is stdout
+          mov       rsi, message            ; address of string to output
+          mov       rdx, 13                 ; number of bytes
+          syscall                           ; invoke operating system to do the write
+          mov       rax, 60                 ; system call for exit
+          xor       rdi, rdi                ; exit code 0
+          syscall                           ; invoke operating system to exit
+
+          section   .data
+message:  db        "Hello, World", 10      ; note the newline at the end
+```
+# 範例練習 2==> 32 位元
+```
+Learn Assembly Language ==> NASM x86 assembly language on linux
+https://asmtutor.com/
+
+https://asmtutor.com/#lesson1
+```
+
+```
+; Hello World Program - asmtutor.com
+; Compile with: nasm -f elf helloworld.asm
+; Link with (64 bit systems require elf_i386 option): ld -m elf_i386 helloworld.o -o helloworld
+; Run with: ./helloworld
+ 
+SECTION .data
+msg     db      'Hello World!', 0Ah     ; assign msg variable with your message string
+ 
+SECTION .text
+global  _start
+ 
+_start:
+ 
+    mov     edx, 13     ; number of bytes to write - one for each letter plus 0Ah (line feed character)
+    mov     ecx, msg    ; move the memory address of our message string into ecx
+    mov     ebx, 1      ; write to the STDOUT file
+    mov     eax, 4      ; invoke SYS_WRITE (kernel opcode 4)
+    int     80h
 ```
