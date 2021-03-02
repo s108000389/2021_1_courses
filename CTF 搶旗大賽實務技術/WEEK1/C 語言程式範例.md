@@ -22,13 +22,17 @@ https://www.tenlong.com.tw/products/9787302498827
 窗體版圖書管理系統、商品管理系統和MP3音樂播放器
 共12個實際項目開發程序為案例
 ```
-### 
+# 範例程式
+```
+C語言從入門到精通（项目案例版）
+明日科技  清華大學  2017
+```
 ```
 #include<stdio.h>
 main()
 {
-	int i=17;
-	printf("%d,%o,%x",i,i,i); 					
+  int i=17;
+  printf("%d,%o,%x",i,i,i); 					
 }
 ```
 ```
