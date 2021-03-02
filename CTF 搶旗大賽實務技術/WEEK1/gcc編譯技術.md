@@ -3,8 +3,15 @@
 GCC, the GNU Compiler Collection
 https://gcc.gnu.org/
 ```
+# gcc 常用指令
+```
+gcc -v
+```
+```
+
+```
 # 範例
-## compile 32-bit program on 64-bit gcc in C and C++
+## 範例1>compile 32-bit program on 64-bit gcc in C and C++
 ```
 https://www.geeksforgeeks.org/compile-32-bit-program-64-bit-gcc-c-c/
 ```
@@ -32,4 +39,4 @@ Size = 8
 For C language: sudo apt-get install gcc-multilib
 For C++ language: sudo apt-get install g++-multilib
 ```
-
+## 範例2>
