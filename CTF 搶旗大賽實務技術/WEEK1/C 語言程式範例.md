@@ -31,3 +31,25 @@ main()
 	printf("%d,%o,%x",i,i,i); 					
 }
 ```
+```
+//3.3
+#include<stdio.h>
+main()
+{
+  printf("12\t34\r56\n7     8\b9 10");
+  printf("\n\052,\x26");
+}
+```
+```
+//3.4
+#include<stdio.h>
+main()
+{
+  char c1,c2;
+  c1='a';						
+  c2='b'; 						
+  c1=c1+10;
+  c2=c2-c1+10;
+  printf("%c,%d\n%c,%d",c1,c1,c2,c2);
+}
+```
