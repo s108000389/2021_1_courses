@@ -13,25 +13,25 @@
 ```
 選擇題
 (  )1.	下列何者為HTML文件的根元素？
-		A. <meta>			B. <html>				C. <head>			D. <body>
+	A. <meta>  B. <html>	C. <head>	D. <body>
 (  )2.	下列哪個全域屬性可以用來設定元素的標題？
-		A. class					B. id						C. style					D. title
+		A. class	B. id	 C. style	D. title
 (  )3.	下列哪個事件屬性可以用來設定當瀏覽器載入網頁時所要執行的Script？
-		A. onload				B. onclick				C. onfocus			D. onblur
+		A. onload	B. onclick	C. onfocus	D. onblur
 (  )4.	下列哪個元素可以放在 <head> 元素裡面？
-		A. <p>					B. <h1>				C. <body>			D. <title>
+		A. <p>	B. <h1>	 C. <body>	D. <title>
 (  )5.	下列哪個元素可以用來設定HTML文件的內容類型 (content type)？
-		A. <html>				B. <p>					C. <meta>			D. <link>
+		A. <html>	B. <p>	C. <meta>	D. <link>
 (  )6.	下列哪個元素可以用來設定HTML文件的聯絡資訊？
-		A. <footer>			B. <title>				C. <time>				D. <address>
+	A. <footer>  B. <title>	  C. <time>	D. <address>
 (  )7.	下列哪個HTML5新增的元素最適合用來標示獨立的內容，例如部落格的一篇文章？
-		A. <article>			B. <section>			C. <aside>			D. <nav>
+	A. <article>	B. <section>	C. <aside>	D. <nav>
 (  )8.	下列哪個HTML5新增的元素最適合用來放置網頁的擁有者資訊、建議瀏覽器解析度、版權聲明、隱私權政策等內容？
-		A. <header>			B. <footer>			C. <aside>			D. <address>
+	A. <header>	B. <footer>	C. <aside>	D. <address>
 (  )9.	下列哪個元素預設的字體最大？
-		A. <h1>				B. <h2>				C. <p>					D. <pre>
+	A. <h1> 	B. <h2>	  C. <p>	D. <pre>
 (  )10.下列哪個元素可以用來設定目前文件與其它資源之間的關聯？
-		A. <base>				B. <meta>			C. <head>			D. <link>
+	A. <base>	B. <meta>	C. <head>	D. <link>
 ```
 ```
 配合題
