@@ -7,8 +7,8 @@
 Get-Help
 Get-ExecutionPolicy   Set-ExecutionPolicy
 
-
-
+Get-ChildItem ==> Enumerating Files, Folders, and Registry Keys
+  Get-Command -Name Get-ChildItem -Syntax
 
 ConvertTo-HTML
 Export-CSV
