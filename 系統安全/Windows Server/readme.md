@@ -9,6 +9,9 @@ https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019-essentia
 文/林妍溱 | 2020-03-02發表
 https://www.ithome.com.tw/news/136088
 ```
+```
+https://www.uuu.com.tw/Course/Show/1708/Windows-Server-2019%E7%AE%A1%E7%90%86
+```
 # 教科書
 ```
 Windows Server 2019 系統與網站建置實務
