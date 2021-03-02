@@ -2,6 +2,13 @@
 ```
 https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019-essentials
 ```
+```
+微軟6月將終止MCSA、MCSD、MCSE認證考試
+包含MCSA、MCSD及MCSE的40多種認證考試，將在今年6月底走入歷史。
+至於現有MCSA、MCSD與MCSE認證效期，將從6月30日起算展延2年
+文/林妍溱 | 2020-03-02發表
+https://www.ithome.com.tw/news/136088
+```
 # 教科書
 ```
 Windows Server 2019 系統與網站建置實務
