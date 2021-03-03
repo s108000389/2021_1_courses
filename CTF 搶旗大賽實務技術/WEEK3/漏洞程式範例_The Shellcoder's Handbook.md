@@ -70,7 +70,6 @@ int main ()
 
 編譯==> gcc test1.c -o test1
 執行 ==> ./test1
-
 ```
 
 ## buffer2.c
@@ -86,4 +85,25 @@ int main ()
    }
 }
 
+```
+```
+編譯==>  gcc test2.c -o test2
+執行 ==> ./test2
+```
+
+# Chapter 3: Shellcode
+## spawnshell.c
+```
+#include <stdio.h>
+int main()
+{
+     char *happy[2];
+     happy[0] = "/bin/sh";
+     happy[1] = NULL;
+     execve (happy[0], happy, NULL);
+}
+```
+```
+編譯==>  gcc spawnshell.c -o spawnshell
+執行 ==> ./spawnshell
 ```
