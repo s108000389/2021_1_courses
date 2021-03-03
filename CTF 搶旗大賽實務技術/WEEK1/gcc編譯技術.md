@@ -73,7 +73,22 @@ For C language: sudo apt-get install gcc-multilib
 For C++ language: sudo apt-get install g++-multilib
 ```
 ```
-apt install libc6-dev-i386
+sudo apt-get install libc6-dev-i386
+
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ gsettings-desktop-schemas : Breaks: mutter (< 3.31.4) but 3.30.2-7 is to be installed
+ libc6-dev : Breaks: libgcc-8-dev (< 8.4.0-2~) but 8.3.0-6 is to be installed
+ python3-tornado : Breaks: mitmproxy (< 5.0~) but 4.0.4-5 is to be installed
+E: Error, pkgProblemResolver::Resolve generated breaks, this may be caused by held packages.
 ```
 ```
 gcc -m32 geek.c -o geek
