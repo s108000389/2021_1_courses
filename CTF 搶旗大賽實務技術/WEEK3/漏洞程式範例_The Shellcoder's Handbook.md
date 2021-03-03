@@ -7,7 +7,7 @@ https://www.wiley.com/en-us/The+Shellcoder%27s+Handbook%3A+Discovering+and+Explo
 ```
 
 ```
-Part I: Introduction to Exploitation: Linux on x86.
+Part I: Introduction to Exploitation: Linux on x86.  ==> 32位元
 Chapter 1: Before You Begin.
 Chapter 2: Stack Overflows.
 Chapter 3: Shellcode.
