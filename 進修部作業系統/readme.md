@@ -15,3 +15,8 @@ Linux 作業系統
 ```
 GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
 ```
+
+# virtualbox
+```
+https://www.virtualbox.org/wiki/Downloads
+```
