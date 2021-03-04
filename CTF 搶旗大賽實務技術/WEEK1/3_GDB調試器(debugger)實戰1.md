@@ -67,6 +67,9 @@ Reading symbols from ./test1...done.
 
 (gdb) list 2,6
 
+(gdb) help
 
+(gdb) help all
 
+(gdb) q
 ```
