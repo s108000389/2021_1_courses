@@ -10,7 +10,7 @@ int main()
    return 0;
 }
 ```
-##
+## Unumtu 16.04 LTS(32 bits)
 ```
 (1)編譯
    ==> gcc helloCTFer.c  ==>  產生a.out執行檔   
@@ -27,7 +27,11 @@ int main()
     ==> file ./helloCTFer
     ==> file ./helloCTFer.exe
 ```
+```
+file helloCTFer.exe 
 
+helloCTFer.exe: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=4258888fd293dae24c8143c584f1514ddcc7db0e, not strippe
+```
 # Linux C 程式的編譯與運行:
 ```
 編譯的各階段
