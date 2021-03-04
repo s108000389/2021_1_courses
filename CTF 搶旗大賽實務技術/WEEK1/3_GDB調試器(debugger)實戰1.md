@@ -60,10 +60,20 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from ./test1...done.
 
+//不帶參數的list 指令
+//顯示上次內容之前或之後的10 行內容
+//首次使用顯示main 函數之前或之後的10 行內容
 
 (gdb) list
 
-(gdb) list 10
+
+//帶一個參數的list 指令
+//顯示參數行之前和之後的10 行內容
+
+(gdb) list 10  
+
+//帶兩個參數的list 指令
+//顯示原始檔案從一行到另一行其中的所有內容
 
 (gdb) list 2,6
 
