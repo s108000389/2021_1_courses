@@ -1,5 +1,7 @@
-#
+# Linux C++ 程式的編譯與運行:
+## 範例
 ```
+//helloCTFer.cpp
 #include <iostream>
 using namespace std;
 
@@ -8,6 +10,34 @@ int main()
     cout << "Hello, CTFer" << endl;
     return 0;
 }
+```
+##
+```
+g++ helloCTFer.cpp
+
+./a.out
+```
+```
+g++ helloCTFer.cpp -o helloCTFer_CPP
+
+./helloCTFer_CPP
+```
+```
+ksu@KSU-Ubuntu-1604-32:~$ file helloCTFer
+
+helloCTFer: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=4258888fd293dae24c8143c584f1514ddcc7db0e, not stripped
+
+
+ksu@KSU-Ubuntu-1604-32:~$ file helloCTFer_CPP
+
+helloCTFer_CPP: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=12a295d9f244896d6393fb167fcf2b969404aba2, not stripped
+
+```
+#
+```
+ g++ -E helloCTFer.cpp -o helloCTFer_CPP.i
+ 
+ g++ -S helloCTFer_cpp.i -o helloCTFer_CPP.s
 ```
 
 ```
@@ -118,5 +148,4 @@ _GLOBAL__sub_I_main:
 	.hidden	__dso_handle
 	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
-
 ```
