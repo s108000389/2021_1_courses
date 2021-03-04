@@ -83,6 +83,7 @@ usage: hexdump [-bcCdovx] [-e fmt] [-f fmt_file] [-n length]
                [-s skip] [file ...]
 
 hexdump還有很多的用法，具體可以參看man hexdump
+https://man7.org/linux/man-pages/man1/hexdump.1.html
 
 https://man.linuxde.net/hexdump
 https://www.itread01.com/article/1513751613.html
