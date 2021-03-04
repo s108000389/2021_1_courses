@@ -9,6 +9,9 @@ ISBN：9789863793144
 
 http://www.deepstone.com.tw/xmdoc/cont?xsmsid=0J191295271158913049&sid=0J338194422913126466&sq=LINUX%20C
 ```
+```
+https://github.com/capss22/IPAS-/tree/master/linux-C
+```
 # 第10 章 執行緒環境
 ```
 See 10.2.7 動態記憶體管理
