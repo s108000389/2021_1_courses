@@ -26,3 +26,8 @@ In-depth: ELF - The Extensible & Linkable Format
 觀看次數：57,548次•2020年10月28日
 https://www.youtube.com/watch?v=nC1U1LJQL8o
 ```
+
+```
+readelf elf文件格式分析
+https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/readelf.html
+```
