@@ -77,6 +77,11 @@ ELF File magic ==> 7f 45 4c 46 01 01 01 00
 ```
 ### hexdump 的用法
 ```
+usage: hexdump [-bcCdovx] [-e fmt] [-f fmt_file] [-n length]
+               [-s skip] [file ...]
+       hd      [-bcdovx]  [-e fmt] [-f fmt_file] [-n length]
+               [-s skip] [file ...]
+
 hexdump還有很多的用法，具體可以參看man hexdump
 
 https://man.linuxde.net/hexdump
