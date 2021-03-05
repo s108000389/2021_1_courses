@@ -33,3 +33,22 @@ double sqrt(double x) {
 gcc -o hook.so -shared hook.c
 LD_PRELOAD=./hook.so ./main
 ```
+###
+```
+ksu@KSU-Ubuntu-1604-32:~$ gedit main.c
+ksu@KSU-Ubuntu-1604-32:~$ gcc -o main main.c -lm
+ksu@KSU-Ubuntu-1604-32:~$ ./main
+foo
+-nan
+ksu@KSU-Ubuntu-1604-32:~$ ./main
+16
+4.000000
+
+
+ksu@KSU-Ubuntu-1604-32:~$ gedit hook.c
+ksu@KSU-Ubuntu-1604-32:~$ gcc -o hook.so -shared hook.c
+ksu@KSU-Ubuntu-1604-32:~$ LD_PRELOAD=./hook.so ./main
+5
+2.000000
+
+```
