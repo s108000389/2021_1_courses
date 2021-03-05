@@ -41,14 +41,14 @@ _start:
 	mov ebx,0            ; Exit with return code of 0 (no error)
 	int 80h;
 ```
-
+### 執行
 ```
 $ nasm -f elf32 helloworld32.asm
 $ ld helloworld32.o -o helloworld32
 $ ./hello-world32
 ```
+### 用hexdump看看
 ```
-用hexdump看看
 hd helloworld.o
 ```
 ```
@@ -82,16 +82,36 @@ hd helloworld.o
 00000280  0b 00 00 00 01 02 00 00  00 00 00 00 00 00 00 00  |................|
 00000290
 ```
+### 32位元Linux系統呼叫
 ```
-32位元Linux系統呼叫
 http://syscalls.kernelgrok.com/
 ```
-## 64-bit helloworld.asm
+# 64-bit helloworld.asm
 ```
+; 64-bit "Hello World!" in Linux NASM
 
+global _start            ; global entry point export for ld
 
+section .text
+_start:
+
+    ; sys_write(stdout, message, length)  系統呼叫
+    mov    rax, 1        ; sys_write
+    mov    rdi, 1        ; stdout
+    mov    rsi, message    ; message address
+    mov    rdx, length    ; message string length
+    syscall
+
+    ; sys_exit(return_code) 系統呼叫
+    mov    rax, 60        ; sys_exit
+    mov    rdi, 0        ; return 0 (success)
+    syscall
+
+section .data
+    message: db 'Hello, world!',0x0A    ; message and newline
+    length:    equ    $-message        ; NASM definition pseudo-instruction
 ```
-
+### 執行
 ```
 $ nasm -f elf32 helloworld.asm
 $ ld helloworld.o -o helloworld
@@ -101,6 +121,10 @@ $ ./hello-world
 用hexdump看看
 hd helloworld.o
 ```
+### 64位元Linux系統呼叫
 ```
+http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/
 
+最新版的定義
+https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl
 ```
