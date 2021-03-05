@@ -1,5 +1,7 @@
 # LD_PRELOAD技術
-
+```
+使用LD_PRELOAD技術完成簡易型駭客程式注入
+```
 ## 範例
 ```
 // main.c
