@@ -24,7 +24,7 @@ readelf [-a|--all]
                [-s|--syms|--symbols]
                [--dyn-syms]
                [-n|--notes]
-               [-r|--relocs]
+               [-r|--relocs] 顯示文件的重定位部分的內容（如果有的話）
                [-u|--unwind]
                [-d|--dynamic]
                [-V|--version-info]
@@ -47,10 +47,10 @@ readelf [-a|--all]
                [--ctf-symbols=section]
                [--ctf-strings=section]
                [-I|--histogram]
-               [-v|--version]
+               [-v|--version]  顯示readelf的版本
                [-W|--wide]
                [-T|--silent-truncation]
-               [-H|--help]
+               [-H|--help]    顯示readelf可以理解的命令行選項
                elffile...
 ```
 # readelf分析技術
