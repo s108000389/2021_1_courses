@@ -86,7 +86,7 @@ hd helloworld.o
 ```
 http://syscalls.kernelgrok.com/
 ```
-# 64-bit helloworld.asm
+# 64-bit helloworld64.asm
 ```
 ; 64-bit "Hello World!" in Linux NASM
 
@@ -113,9 +113,9 @@ section .data
 ```
 ### 執行
 ```
-$ nasm -f elf32 helloworld.asm
-$ ld helloworld.o -o helloworld
-$ ./hello-world
+$ nasm -f elf64 helloworld64.asm
+$ ld helloworld64.o -o helloworld64
+$ ./helloworld64
 ```
 ```
 用hexdump看看
