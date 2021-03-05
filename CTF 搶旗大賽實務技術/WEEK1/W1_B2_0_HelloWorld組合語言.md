@@ -45,11 +45,11 @@ _start:
 ```
 $ nasm -f elf32 helloworld32.asm
 $ ld helloworld32.o -o helloworld32
-$ ./hello-world32
+$ ./helloworld32
 ```
 ### 用hexdump看看
 ```
-hd helloworld.o
+hd helloworld32.o
 ```
 ```
 00000000  7f 45 4c 46 01 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|
@@ -117,9 +117,9 @@ $ nasm -f elf64 helloworld64.asm
 $ ld helloworld64.o -o helloworld64
 $ ./helloworld64
 ```
+### 用hexdump看看
 ```
-用hexdump看看
-hd helloworld.o
+hd helloworld64.o
 ```
 ### 64位元Linux系統呼叫
 ```
