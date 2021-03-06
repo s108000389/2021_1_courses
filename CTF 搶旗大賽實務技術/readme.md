@@ -41,7 +41,7 @@ pwntools 技術報告
 ```
 [1]linux c prgramming ==> gcc
    assembler compiler linker
-   linux libary development : static(libxxx.a) vs share(libxxx.so)
+   linux library development : static(libxxx.a) vs share(libxxx.so)
    LD_preload技術實戰
 [2]c++ prgramming ==> g++
 [3]nams 組合語言程式開發
