@@ -1,6 +1,5 @@
 #
 ```
-
 ksu@KSU-Ubuntu-1604-32:~$ nasm -h
 usage: nasm [-@ response file] [-o outfile] [-f format] [-l listfile]
             [options...] [--] filename
@@ -25,7 +24,7 @@ usage: nasm [-@ response file] [-o outfile] [-f format] [-l listfile]
 
     -o outfile  write output to an outfile
 
-    -f format   select an output format
+    -f format   select an output format  ==> 重要:  -f f32  (產生32位元執行檔) 
 
     -l listfile write listing to a listfile
 
