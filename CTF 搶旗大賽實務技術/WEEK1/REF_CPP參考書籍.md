@@ -73,6 +73,10 @@ https://www.tenlong.com.tw/products/9787302499497
 ## 資料結構與演算法
 
 ```
+資料結構標準教材
+Fundamentals of Data Structures in C++, 2/e (Paperback)
+Ellis Horowitz, Sartaj Sahni, Dinesh Mehta
+Silicon Press  2006-06-30
 
 ```
 
@@ -95,4 +99,10 @@ Richard Neapolitan 著、蔡宗翰 譯
 第九章 計算複雜度與難解性：NP Theory序論
 第十章 數論演算法
 第十一章 平行演算法序論
+```
+```
+演算法經典教材  台大博士資格考與重大考試用書
+Introduction to Algorithms, 3/e 
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein
+MIT   2009-09-01
 ```
