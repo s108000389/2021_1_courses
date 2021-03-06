@@ -3,7 +3,7 @@
 王者歸來－Linux C 系統整合開發設計, 4/e
 吳岳   佳魁資訊   2016-04-19
 ```
-#
+# Linux C function() 參考手冊
 ```
 https://people.cs.nctu.edu.tw/~yslin/library/linuxc/main.htm
 ```
