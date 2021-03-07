@@ -10,10 +10,12 @@ Robert G. Plantz
 x86-64 Assembly Language Programming with Ubuntu (Ed Jorgensen)
 http://www.egr.unlv.edu/~ed/assembly64.pdf
 ```
-#
+# MASM
 ```
-組合語言, 7/e (國際版) (Assembly Language for x86 Processors, 7/e)
-繁體中文/Kip R. Irvine 著、白能勝、王國華、張子庭 譯/全華出版日期：2016-06-30
+組合語言, 7/e (國際版) 
+Assembly Language for x86 Processors, 7/e
+繁體中文/Kip R. Irvine 著、白能勝、王國華、張子庭 譯
+全華出版日期：2016-06-30
 
 CH01 基本概念
 CH02 x86處理器架構
@@ -47,11 +49,26 @@ https://github.com/Apress/beginning-x64-assembly-programming
 ```
 https://github.com/tpn/pdfs/blob/master/Introduction%20to%20x64%20Assembly.pdf
 ```
-# 上課以此為基礎
+# NASM 上課以此為基礎
 ```
 online線上閱讀  ==> 免費  
 Introduction to Computer Organization with x86-64 Assembly Language & GNU/Linux
 http://bob.cs.sonoma.edu/IntroCompOrg-x64/book.html
+```
+```
+Programming from the Ground Up
+https://download-mirror.savannah.gnu.org/releases/pgubook/ProgrammingGroundUp-1-0-booksize.pdf
+
+https://github.com/foomur/programming-ground-up
+```
+
+### 
+```
+Professional Assembly Language
+Richard Blum
+
+ISBN: 978-0-764-57901-1 February 2005 576 Pages
+
 ```
 
 # 組合語言之Intel and AT&T syntax語法格式
