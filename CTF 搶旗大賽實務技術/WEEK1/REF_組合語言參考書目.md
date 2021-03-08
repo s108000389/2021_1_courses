@@ -71,6 +71,10 @@ ISBN: 978-0-764-57901-1 February 2005 576 Pages
 
 ```
 
+```
+https://www.lse.epita.fr/teaching/epita/asm.pdf
+```
+
 # 組合語言之Intel and AT&T syntax語法格式
 ```
 AT&T Syntax
