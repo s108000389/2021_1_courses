@@ -81,19 +81,3 @@ AT&T Syntax
 Intel x86 JUMP quick reference
 http://www.unixwiz.net/techtips/x86-jumps.html
 ```
-# assembly language instruction組合語言指令
-```
-
-```
-# 範例練習
-```
-objdump -d /bin/bash  ==> 預設使用 AT&T 語法格式
-```
-```
-objdump -d -M intel /bin/bash ==> 使用intel 語法格式
-```
-#
-```
-
-
-```
