@@ -7,6 +7,9 @@
 https://github.com/brianrhall/Assembly
 
 https://www.tenlong.com.tw/products/9787111615163
+
+買電子書
+https://redshelf.com/book/742712/assembly-programming-and-computer-architecture-for-software-engineers-742712-9781943153312-brian-r-hall-and-kevin-j-slonka
 ```
 ### 特色
 ```
