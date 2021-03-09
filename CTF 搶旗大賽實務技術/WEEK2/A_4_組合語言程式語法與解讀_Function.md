@@ -5,6 +5,8 @@
 
 產生intel 語法的組合語言
     gcc -S -masm=intel func1.c -o func1_intel.s
+
+gcc -S -masm=intel func1.c -o func1_intel.s -fno-asynchronous-unwind-tables
 ```
 # 範例程式
 ```
@@ -208,4 +210,69 @@ max:
 	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609"
 	.section	.note.GNU-stack,"",@progbits
 
+```
+### 
+```
+ksu@KSU-Ubuntu-1604-32:~$ gcc -S -masm=intel func1.c -o func1_intel.s -fno-asynchronous-unwind-tables
+ksu@KSU-Ubuntu-1604-32:~$ cat func1_intel.s
+```
+
+```
+        .file	"func1.c"
+	.intel_syntax noprefix
+	.section	.rodata
+.LC0:
+	.string	"Max value is : %d\n"
+	.text
+	.globl	main
+	.type	main, @function
+main:
+	lea	ecx, [esp+4]
+	and	esp, -16
+	push	DWORD PTR [ecx-4]
+	push	ebp
+	mov	ebp, esp
+	push	ecx
+	sub	esp, 20
+	mov	DWORD PTR [ebp-20], 100
+	mov	DWORD PTR [ebp-16], 200
+	sub	esp, 8
+	push	DWORD PTR [ebp-16]
+	push	DWORD PTR [ebp-20]
+	call	max
+	add	esp, 16
+	mov	DWORD PTR [ebp-12], eax
+	sub	esp, 8
+	push	DWORD PTR [ebp-12]
+	push	OFFSET FLAT:.LC0
+	call	printf
+	add	esp, 16
+	mov	eax, 0
+	mov	ecx, DWORD PTR [ebp-4]
+	leave
+	lea	esp, [ecx-4]
+	ret
+	.size	main, .-main
+	.globl	max
+	.type	max, @function
+max:
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 16
+	mov	eax, DWORD PTR [ebp+8]
+	cmp	eax, DWORD PTR [ebp+12]
+	jle	.L4
+	mov	eax, DWORD PTR [ebp+8]
+	mov	DWORD PTR [ebp-4], eax
+	jmp	.L5
+.L4:
+	mov	eax, DWORD PTR [ebp+12]
+	mov	DWORD PTR [ebp-4], eax
+.L5:
+	mov	eax, DWORD PTR [ebp-4]
+	leave
+	ret
+	.size	max, .-max
+	.ident	"GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609"
+	.section	.note.GNU-stack,"",@progbits
 ```
