@@ -1,10 +1,15 @@
-#
+# Professional Assembly Language
 ```
 Professional Assembly Language
 Richard Blum
 
-https://book.douban.com/subject/1446250//
 ISBN: 978-0-764-57901-1 February 2005 576 Pages
+https://book.douban.com/subject/1446250//
+https://www.wiley.com/en-us/Professional+Assembly+Language-p-9780764579011
+原始碼可由網站下載  code.tgz
+
+課程大綱
+http://www.hzcourse.com/web/teachRes/detail/1804/210
 ```
 ```
 第一部分 組合語言程式設計環境基礎
@@ -107,4 +112,52 @@ ISBN: 978-0-764-57901-1 February 2005 576 Pages
 4.4.1 使用printf
 4.4.2 連接C庫函數
 4.5 小結
+```
+
+# 
+```
+#cpuid.s Sample program to extract the processor Vendor ID
+.section .data
+output:
+   .ascii "The processor Vendor ID is 'xxxxxxxxxxxx'\n"
+.section .text
+.globl _start
+_start:
+   movl $0, %eax
+   cpuid
+   movl $output, %edi
+   movl %ebx, 28(%edi)
+   movl %edx, 32(%edi)
+   movl %ecx, 36(%edi)
+   movl $4, %eax
+   movl $1, %ebx
+   movl $output, %ecx
+   movl $42, %edx
+   int $0x80
+   movl $1, %eax
+   movl $0, %ebx
+   int $0x80
+```
+```
+#cpuid2.s View the CPUID Vendor ID string using C library calls
+.section .data
+output:
+    .asciz "The processor Vendor ID is '%s'\n"
+.section .bss
+    .lcomm buffer, 12
+.section .text
+.globl _start
+_start:
+    movl $0, %eax
+    cpuid
+    movl $buffer, %edi
+    movl %ebx, (%edi)
+    movl %edx, 4(%edi)
+    movl %ecx, 8(%edi)
+    pushl $buffer
+    pushl $output
+    call printf
+    addl $8, %esp
+    pushl $0
+    call exit
 ```
