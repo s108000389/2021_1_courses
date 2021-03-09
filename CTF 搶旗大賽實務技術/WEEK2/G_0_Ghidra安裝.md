@@ -53,3 +53,24 @@ bash run_ghidra.sh
 要一段時間
 OK
 ```
+# 使用Ghidra解CTF
+```
+https://github.com/ENOFLAG/writeups/blob/master/0ctf2019/sanitize.md
+```
+
+
+```
+Ghidra and IDA - Solving a reverse engineering CTF crackme - AmIRootYet - Pranshu Bajpai
+觀看次數：14,259次•2019年4月28日
+https://www.youtube.com/watch?v=S06pgk4DjFQ
+```
+```
+Reversing CrackMe with Ghidra (Part 1)
+觀看次數：18,628次•2019年9月20日
+https://www.youtube.com/watch?v=6p5Qviusskk&t=33s
+```
+```
+Reversing CrackMe with Ghidra (Part 2)
+觀看次數：6,032次•2019年10月9日
+https://www.youtube.com/watch?v=Eu9YC1Jq1Do
+```
