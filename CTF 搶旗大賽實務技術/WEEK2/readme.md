@@ -26,6 +26,8 @@ lec17_x86SIMD.ppt
 Introductory Intel x86: Architecture, Assembly, Applications, & Alliteration
 https://www.opensecuritytraining.info/IntroX86.html
 
+https://www.youtube.com/playlist?list=PL038BE01D3BAEFDB0
+
 Day 1 Part 1: Introductory Intel x86: Architecture, Assembly, Applications
 觀看次數：256,858次•2012年4月14日
 https://www.youtube.com/watch?v=H4Z0S9ZbC0g
