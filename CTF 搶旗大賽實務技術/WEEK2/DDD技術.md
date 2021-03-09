@@ -1,4 +1,4 @@
-#
+# ddd@Ubuntu 16.04 LTS(32-bit)
 ```
 ddd -h
 GNU DDD 3.3.12 (i686-pc-linux-gnu)
