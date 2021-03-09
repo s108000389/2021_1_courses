@@ -2,6 +2,8 @@
 ```
 Memory Layout of C Programs
 https://www.geeksforgeeks.org/memory-layout-of-c-program/
+
+http://www.cyberplusindia.com/blog/index.php/2008/10/16/memory-layout-for-c-programs-in-linux/
 ```
 ```
 ==> 特別注意 高位址(stack) 與 低位址(heap)
