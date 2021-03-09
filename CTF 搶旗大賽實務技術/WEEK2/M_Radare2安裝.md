@@ -30,6 +30,10 @@ https://r2wiki.readthedocs.io/en/latest/home/ctf-solving-using-radare2/
 sure-fire/CTF-writeups
 https://github.com/sure-fire/CTF-writeups/blob/master/writeups/crackme/0x00.md
 ```
+```
+Flare-on 2015 - Level 2: very_success.exe
+https://fevral.github.io/2017/08/13/flareon2015-2.html
+```
 
 # x64dbg
 ```
