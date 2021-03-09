@@ -42,6 +42,18 @@ int main(void)
 gcc memory-layout.c -o memory-layout
 size memory-layout
 ```
+### 32bit  Ubuntu 16.04 LTS
+
+```
+gcc ML.c -o ML
+size ML
+```
+```
+   text	   data	    bss	    dec	    hex	filename()
+   1017	    272	      4	   1293	    50d	ML
+   
+ 1017+272+4 = 1293() = ()
+```
 
 ## 測試2:增加 未初始化 的 全域變數(Global variable)
 ```
