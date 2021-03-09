@@ -6,7 +6,7 @@
 產生intel 語法的組合語言
     gcc -S -masm=intel func1.c -o func1_intel.s
 ```
-
+# 範例程式
 ```
 #include <stdio.h>
  
