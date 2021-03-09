@@ -1,6 +1,9 @@
-#
+# Ghidra 
 ```
+Ghidra is a software reverse engineering (SRE) suite of tools 
+developed by NSA’s Research Directorate in support of the Cybersecurity mission.
 
+Ghidra is open-source.
 ```
 # 撰寫 run ghidra.sh
 ```
@@ -20,4 +23,8 @@ sudo apt install openjdk-11-jdk
 sudo apt install openjdk-11-jre-headless
 chmod +x ghidraRun
 ./ghidraRun
+```
+```
+OK
+
 ```
