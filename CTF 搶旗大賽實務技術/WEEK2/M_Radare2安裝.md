@@ -21,6 +21,15 @@ Radare2 Tutorial 8 - Solving a CTF challenge
 觀看次數：1,956次•2020年4月15日
 https://www.youtube.com/watch?v=BcjvRf6IAFA
 ```
+## 使用radare2解CTF
+```
+CTF solving using radare2 / Blogs
+https://r2wiki.readthedocs.io/en/latest/home/ctf-solving-using-radare2/
+```
+```
+sure-fire/CTF-writeups
+https://github.com/sure-fire/CTF-writeups/blob/master/writeups/crackme/0x00.md
+```
 
 # x64dbg
 ```
