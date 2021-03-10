@@ -3,6 +3,8 @@
 Python 與 LINE Bot 機器人全面實戰特訓班 -- Flask 最強應用 (附210分鐘影音教學/範例程式)
 繁體中文/鄧文淵 總監製/文淵閣工作室 編著/碁峰資訊出版日期：2021-02-19
 https://www.tenlong.com.tw/products/9789865027292
+
+books.gotop.com.tw/download/ACL061500
 ```
 ```
 LINE Bot by Python 全攻略：從 Heroku 到 AWS 跨平台實踐 (iT邦幫忙鐵人賽系列書)
@@ -18,6 +20,8 @@ Python 與 LINE Bot 機器人全面實戰特訓班 (附203分鐘影音教學/範
 碁峰資訊 2019-08-12
 
 https://www.tenlong.com.tw/products/9789865022310
+
+http://books.gotop.com.tw/download/ACL057600
 ```
 # 推薦教材
 ```
