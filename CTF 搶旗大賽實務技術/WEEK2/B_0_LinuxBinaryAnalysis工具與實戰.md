@@ -28,8 +28,8 @@ gdb (GNU 調試器）
 ### 靜態庫工具
 
 # 進階閱讀
+### PRACTICAL BINARY ANALYSIS
 ```
-PRACTICAL BINARY ANALYSIS
 Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly
 by Dennis Andriesse
 
@@ -37,8 +37,8 @@ https://practicalbinaryanalysis.com/
 
 Virtual Machine and Code Samples
 ```
+### Binary Hacks：駭客秘傳技巧一百招
 ```
-Binary Hacks：駭客秘傳技巧一百招
 高林哲, 鵜飼文敏, 佐藤祐介等  譯者：Studio Tib.
 歐萊禮出版社：2013/05/30
 
