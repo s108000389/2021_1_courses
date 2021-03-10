@@ -27,7 +27,16 @@ gdb (GNU 調試器）
 ```
 ### 靜態庫工具
 
+# 進階閱讀
+```
+PRACTICAL BINARY ANALYSIS
+Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly
+by Dennis Andriesse
 
+https://practicalbinaryanalysis.com/
+
+Virtual Machine and Code Samples
+```
 # 實戰主題
 ```
 高級C/C++編譯技術
