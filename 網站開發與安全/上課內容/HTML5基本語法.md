@@ -101,14 +101,46 @@ HTML5 新增的結構元素
 ```
 # 第6章　表單(Form) ==> 使用者註冊表單 
 ```
+常見案例1:使用者註冊表單 
+常見案例2:線上問卷調查網
+```
+```
 建立表單－ <form>、<input> 元素
+   表單與各種輸入欄位設計
+   <form> 元素 屬性的各種設定 ==>method=“{get,post}”
+   <input> 元素 屬性的各種設定 ==> type=“state”
+
 HTML4.01 提供的輸入類型
+
+6-2-1 submit、reset ( 提交與重設按鈕)
+6-2-2 text ( 單行文字方塊)
+6-2-3 radio( 選擇鈕 )
+6-2-4 checkbox ( 核取方塊)
+6-2-5 <textarea> ( 多行文字方塊 )
+6-2-6 <select>、<option> ( 下拉式清單 )
+6-2-7 password ( 密碼欄位)
+6-2-8 hidden ( 隱藏欄位) ==> 作業:這有甚麼用?
+
+
 HTML5 新增的輸入類型
+
+6-3-1 email ( 電子郵件地址) ==> 如何驗證email格式的正確性 ?
+6-3-2 url ( 網址)
+6-3-3 search ( 搜尋欄位)
+6-3-4 number ( 數字)
+6-3-5 range ( 指定範圍的數字 )
+6-3-6 color ( 色彩)
+6-3-7 tel ( 電話號碼 )==> 如何驗證手機電話號碼格式?如何顯示預設格式
+6-3-8 日期時間的顯示技術 ==> date、time、month、week、datetime-local 
+
 按鈕－ <button> 元素
+    type=“{submit,reset,button}” 屬性的用處
+
 標籤－ <label> 元素
 群組標籤－ <optgroup> 元素
+
 將表單欄位框起來－<fieldset>、<legend> 元素
 
 
-使用者註冊表單 
+
 ```
