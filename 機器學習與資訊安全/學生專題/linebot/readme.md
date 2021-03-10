@@ -23,6 +23,16 @@ https://www.tenlong.com.tw/products/9789865022310
 
 http://books.gotop.com.tw/download/ACL057600
 ```
+
+
+```
+打造股市小秘書｜聊天機器人x網路爬蟲x NoSQLxPython整合應用實務 
+
+作者： 行銷資料科學團隊 楊超霆、林建興、鍾皓軒	
+書號： ACN034300	    出版日： 2019/09/11
+
+http://books.gotop.com.tw/v_ACN034300
+```
 # 推薦教材
 ```
 LINE Bot by Python 全攻略：從 Heroku 到 AWS 跨平台實踐 (iT邦幫忙鐵人賽系列書)
