@@ -71,5 +71,5 @@ file hello3 ==>
 ```
 ## 組譯成32位元執行檔並執行
 ```
-gcc -c hello.s && ld hello.o -o hello2 && ./hello2
+as -- 32 -c hello32.s && ld hello32.o -o hello32 && ./hello32
 ```
