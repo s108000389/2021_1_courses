@@ -1,6 +1,5 @@
-#
+# 深入理解程序設計 使用Linux匯編語言
 ```
-深入理解程序設計 使用Linux匯編語言
 （美）巴特利特 人民郵電出版社  2014/01/01
 https://www.books.com.tw/products/CN11078208?sloc=main
 
