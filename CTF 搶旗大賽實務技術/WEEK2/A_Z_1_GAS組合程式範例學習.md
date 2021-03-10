@@ -21,11 +21,13 @@ factorial.s - solving a factorial by creating a function
 square.s - solving a square x^2 = ? by creating a function
 
 Chapter 5 - Buffers & File Descriptors
-toupper.s - using buffers and file descriptors to change all lowercase letters of a file to all uppercase letters
+toupper.s - using buffers and file descriptors to change all lowercase letters of a file 
+            to all uppercase letters
 
 
 Chapter 6 - Reading and Writing Simple Records:
-linux.s - common Linux definitions use .equ including syscalls, file descriptors, status codes, interrupts
+linux.s - common Linux definitions use .equ including syscalls, file descriptors, 
+          status codes, interrupts
 record-def.s - record offsets
 add-year.s - add a year to each record
 count-chars.s - function to count the number of characters in a record
