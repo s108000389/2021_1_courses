@@ -1,9 +1,10 @@
 #
 ```
-
+32bit Helloworld
+64bit Helloworld
 ```
 
-# 
+# 32bit Helloworld
 ```
 .global	_start
 
@@ -53,8 +54,22 @@ _start:
 message:
     .ascii "Hello, world\n"
 ```
+## 組譯成64位元執行檔並執行
 ```
-gcc -c hello.s && ld hello.o && ./a.out
+gcc -c hello.s && ld hello.o -o hello2 && ./hello2
 
-gcc -nostdlib hello.s && ./a.out
+file hello2 ==>
+hello2: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+```
+```
+as hello.s -o hello3.o && ld hello3.o -o hello3 && ./hello3
+
+file hello3 ==>
+```
+```
+[殘念]gcc -nostdlib hello.s -o hello3 && ./hello3
+```
+## 組譯成32位元執行檔並執行
+```
+gcc -c hello.s && ld hello.o -o hello2 && ./hello2
 ```
