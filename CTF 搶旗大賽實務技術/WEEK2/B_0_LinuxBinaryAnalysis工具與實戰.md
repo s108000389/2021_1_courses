@@ -37,6 +37,17 @@ https://practicalbinaryanalysis.com/
 
 Virtual Machine and Code Samples
 ```
+```
+Binary Hacks：駭客秘傳技巧一百招
+高林哲, 鵜飼文敏, 佐藤祐介等  譯者：Studio Tib.
+歐萊禮出版社：2013/05/30
+
+以BH編號  ==>
+BH3.使用file 檢查檔案種類
+BH4.使用od 傾印binary檔  ==> hexdump
+BH11.使用objcopy對執行檔嚴入資料
+BH13.使用strings 抽出binary 檔案內的字串
+```
 # 實戰主題
 ```
 高級C/C++編譯技術
