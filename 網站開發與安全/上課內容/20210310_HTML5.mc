@@ -35,3 +35,8 @@ i
 ```
 https://www.w3schools.com/tags/tag_ol.asp
 ```
+
+# HTML 圖片技術
+```
+https://i0.wp.com/sci101.news/wp-content/uploads/2019/03/6368778516367495958271247.jpg
+```
