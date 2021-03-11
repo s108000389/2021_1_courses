@@ -1,5 +1,9 @@
 # 使用IDA　pro解逆向工程ＣＴＦ題目
 
+```
+IDA Pro Reverse Engineering Tutorial for Beginners
+https://www.youtube.com/watch?v=N_3AGB9Vf9E&list=PLKwUZp9HwWoDDBPvoapdbJ1rdofowT67z
+```
 # 範例１：blade
 ```
 Demystify reverse engineering CTF challenge — Blade
