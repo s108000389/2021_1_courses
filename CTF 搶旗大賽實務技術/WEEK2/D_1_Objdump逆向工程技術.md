@@ -4,15 +4,6 @@ objdump -d /bin/bash  ==> 預設使用 AT&T 語法格式
 objdump -d -M intel /bin/bash ==> 使用intel 語法格式
 ```
 
-```
-objdump -S helloCTFer
-
-
-注意編譯時要加
-
-gcc helloCTFer.c -o helloCTFer -g
-```
-
 # 範例程式  
 ```
 // helloCTFer.c
