@@ -10,7 +10,6 @@ https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blad
 ###　解答 
 ```
 file 
-
 strings
 
 hexdump
