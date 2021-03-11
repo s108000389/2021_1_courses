@@ -22,9 +22,6 @@ GDB主要功能：
 
 [3]q  ==> Quit的簡寫，退出GDB調試環境。
 ```
-
-
-
 ## 使用help 查詢用法
 ```
 help [命令名稱]
@@ -40,20 +37,18 @@ GDB幫助命令，提供對GDB名種命令的解釋說明。
 Print value of expression EXP.
 Variables accessible are those of the lexical environment of the selected stack frame, plus all those whose scope is global or an entire file.
 
-$NUM gets previous value number NUM.  $ and $$ are the last two values.
+$NUM gets previous value number NUM.  
+$ and $$ are the last two values.
 $$NUM refers to NUM'th value back from the last one.
-Names starting with $ refer to registers (with the values they would have
-if the program were to return to the stack frame now selected, restoring
-all registers saved by frames farther in) or else to debugger
-"convenience" variables (any such name not a known register).
+Names starting with $ refer to registers (with the values they would have if the program were to return to the stack frame now selected, restoring all registers saved by frames farther in) or else to debugger "convenience" variables (any such name not a known register).
 Use assignment expressions to give values to convenience variables.
 
 {TYPE}ADREXP refers to a datum of data type TYPE, located at address ADREXP.
+
 @ is a binary operator for treating consecutive data objects
-anywhere in memory as an array.  FOO@NUM gives an array whose first
-element is FOO, whose second element is stored in the space following
-where FOO is stored, etc.  FOO must be an expression whose value
-resides in memory.
+anywhere in memory as an array.  
+
+FOO@NUM gives an array whose first element is FOO, whose second element is stored in the space following where FOO is stored, etc.  FOO must be an expression whose value resides in memory.
 
 EXP may be preceded with /FMT, where FMT is a format letter
 but no count or size letter (see "x" command).
@@ -63,87 +58,119 @@ but no count or size letter (see "x" command).
 “@”的右邊則你你想查看記憶體的長度。
 
 例如，你的程式中有這樣的語句：
+   int *array = (int *)malloc(len * sizeof(int));
+==> 在GDB調試過程中，可以如下命令顯示出這個動態陣列的取值：
+   (gdb) p *array@len
+```
+## 
+```
+[1]  l ==> List的簡寫
+列出當前位置之後的10行代碼；
+list line_number;  ==>列出line_number之後的十行代碼。
 
-List的簡寫，列出當前位置之後的10行代碼；list line_number: 列出line_number之後的十行代碼。
-(gdb) l
-r
-Run的簡寫，運行被調試的程式。如果此前沒有下過中斷點，則執行完整個程式；如果有中斷點，則程式暫停在第一個可用中斷點處。
+[2] r ==> Run的簡寫，運行被調試的程式。
+如果此前沒有下過中斷點，則執行完整個程式；
+如果有中斷點，則程式暫停在第一個可用中斷點處。
 
-c
-Continue的簡寫，繼續執行被偵錯工具，直至下一個中斷點或程式結束。
-(gdb) c
-
-
+[3]c ==> Continue的簡寫，繼續執行被偵錯工具，直至下一個中斷點或程式結束。
+   (gdb) c
+```
+## 設置中斷點 ==> b是Breakpoint的簡寫
+```
 b <行號>
 b <函數名稱>
 b *<函數名稱>
 b *<代碼地址>
-d [編號]
-b是Breakpoint的簡寫，設置中斷點。兩可以使用“行號”“函數名稱”“執行位址”等方式指定中斷點位置。
+
+
+設置中斷點。兩可以使用“行號”“函數名稱”“執行位址”等方式指定中斷點位置。
 其中在函數名稱前面加*符號表示將中斷點設置在“由編譯器生成的prolog代碼處”。如果不瞭解彙編，可以不予理會此用法。
+
 break ... if ...：條件中斷。
-d是Delete breakpoint的簡寫，刪除指定編號的某個中斷點，或刪除所有中斷點。中斷點編號從1開始遞增。
+
+d [編號]
+d是Delete breakpoint的簡寫，刪除指定編號的某個中斷點，或刪除所有中斷點。
+中斷點編號從1開始遞增。
 
 (gdb) b 8
 (gdb) b main
 (gdb) b *main
 (gdb) b *0x804835c
 (gdb) d
-
-bt
-backtrace的簡寫，列出調用棧。
+```
+## bt ==> backtrace的簡寫，列出呼叫的stack
+```
 (gdb) bt
-s
-執行一行來源程式代碼，如果此行代碼中有函式呼叫，則進入該函數。相當於其它調試器中的“Step Into (單步跟蹤進入)”。
-這個命令必須在有原始程式碼調試資訊的情況下才可以使用（GCC編譯時使用“-g”參數）。
+```
+```
+s ==> 執行一行來源程式代碼
+如果此行代碼中有函式呼叫，則進入該函數。
+相當於其它調試器中的“Step Into (單步跟蹤進入)”。
+這個命令必須在有原始程式碼調試資訊的情況下才可以使用
+（GCC編譯時使用“-g”參數）。
 
-n
-執行一行來源程式代碼，此行代碼中的函式呼叫也一併執行。相當於其它調試器中的“Step Over (單步跟蹤)”。
-這個命令必須在有原始程式碼調試資訊的情況下才可以使用（GCC編譯時使用“-g”參數）。
+n ==> 執行一行來源程式代碼，此行代碼中的函式呼叫也一併執行。
+相當於其它調試器中的“Step Over (單步跟蹤)”。
+這個命令必須在有原始程式碼調試資訊的情況下才可以使用
+（GCC編譯時使用“-g”參數）。
 (gdb) n
-si
-si命令類似於s命令，但針對彙編指令。
 
-ni
-ni命令類似於n命令，但針對彙編指令。
-(gdb) ni
+si ==> si命令類似於s命令，但針對彙編指令。
+
+ni ==> ni命令類似於n命令，但針對彙編指令。
+```
+```
 p <變數名稱>
 Print的簡寫，顯示指定變數（臨時變數或全域變數）的值。
-
-
+```
+```
 x
 和print命令需要指定變數不同，x命令需要指定記憶體位址。
+
 (gdb) help x
 Examine memory: x/FMT ADDRESS.
 ADDRESS is an expression for the memory address to examine.
 FMT is a repeat count followed by a format letter and a size letter.
+
 Format letters are o(octal), x(hex), d(decimal), u(unsigned decimal),
   t(binary), f(float), a(address), i(instruction), c(char) and s(string).
+
 Size letters are b(byte), h(halfword), w(word), g(giant, 8 bytes).
+
 The specified number of objects of the specified size are printed
 according to the format.
 Defaults for format and size letters are those previously used.
 Default count is 1.  Default address is following last thing printed
 with this command or "print".
-(gdb) x /6cb 0x804835c //列印位址0x804835c起始的記憶體內容，連續6個位元組，以字元格式輸出。
 
+(gdb) x /6cb 0x804835c //列印位址0x804835c起始的記憶體內容，連續6個位元組，以字元格式輸出。
+```
+```
 display ...
 undisplay <編號>
 display，設置程式中斷後欲顯示的資料及其格式。
-例如，如果希望每次程式中斷後可以看到即將被執行的下一條彙編指令，可以使用命令display /i $pc，其中 $pc 代表當前彙編指令，/i 表示以十六進行顯示。當需要關心彙編代碼時，此命令相當有用。
-undispaly，取消先前的display設置，編號從1開始遞增。
 
-i
-Info的簡寫，用於顯示各類資訊，詳情請查閱“help i”。
+例如，如果希望每次程式中斷後可以看到即將被執行的下一條彙編指令，可以使用命令display /i $pc，其中 $pc 代表當前彙編指令，/i 表示以十六進行顯示。
+
+當需要關心彙編代碼時，此命令相當有用。
+
+undispaly，取消先前的display設置，編號從1開始遞增。
+```
+## i ==> Info的簡寫，用於顯示各類資訊
+```
+詳情請查閱“help i”。
+
 (gdb) help i
 info address -- Describe where symbol SYM is stored
 info all-registers -- List of all registers and their contents
 info args -- Argument variables of current stack frame
 info auto-load -- Print current status of auto-loaded files
-info auto-load-scripts -- Print the list of automatically loaded Python scripts
+info auto-load-scripts -- Print the list of automatically loaded   
+                     Python scripts
 info auxv -- Display the inferior's auxiliary vector
 info bookmarks -- Status of user-settable bookmarks
-info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+info breakpoints -- Status of specified breakpoints 
+           (all user-settable breakpoints if no argument)
 info checkpoints -- IDs of currently known checkpoints
 info classes -- All Objective-C classes
 info common -- Print out the values contained in a Fortran COMMON block
@@ -195,43 +222,62 @@ info vtbl -- Show the virtual function table for a C++ object
 info warranty -- Various kinds of warranty you do not have
 info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
 info win -- List of all displayed windows
+
+
 (gdb) i r
+```
 
 
+## 中斷點相關指令彙編
+```
+break 設定中斷點
+info break: 查詢已設定的中斷點
+disp 運算式: 每次中斷所顯示的運算式
+info disp: 查詢已設定那些顯示式
+next: 執行一列程式碼 (可加欲執行的列數)
+step: 執行一列程式碼, 但如遇到函數呼叫, 則進入函數裡一步步執行
+cont: 執行, 直到中斷點或程式結束為止
+```
+## 與堆疊有關的指令
+```
+where: 顯示目前副程式層層呼叫的狀況
+up: 往上一層
+down: 往下一層
+```
 
+## 完成網址的練習
+```
+https://www.jianshu.com/p/b7896e9afeb7
+```
+```
+#include <stdio.h>
 
+int g_var = 0;
 
+static int _add(int a, int b) {
+    printf("_add callad, a:%d, b:%d\n", a, b);
+    return a+b;
+}
+
+int main(void) {
+    int n = 1;
+    
+    printf("one n=%d, g_var=%d\n", n, g_var);
+    ++n;
+    --n;
+    
+    g_var += 20;
+    g_var -= 10;
+    n = _add(1, g_var);
+    printf("two n=%d, g_var=%d\n", n, g_var);
+    
+    return 0;
+}
 ```
 
 
 
 
-## 
-```
-
-
-
-```
-
-
-
-
-## 
-```
-
-
-
-```
-
-
-
-
-## 
-```
-
-
-
-```
 
 
 
