@@ -150,13 +150,89 @@ gcc -g -o test4 test4.c
 ```
 
 ```
+錯誤結果==>
 ./test4
 
 The string is hello there
 The string printed backward is
 ```
-
+```
+預期結果==>
+The string printed baekward is ereht olleh
+```
 ### 使用gdb除錯
 ```
+gcc -o test4 -g test4.e
+```
+```
+$gdb test4
 
+(gdb) file test4
+{gdb) run
+      ==> 還是錯誤結果
+
+初步預測問題出在函數內部
+==>可以在my__print2 函數的for 敘述後設一個中斷點。
+
+(1)使用list 指令列出的來源程式==>  (gdb) list
+(2)透過以上程式可以看出要設中斷點的地方在第18 行
+   使用 break 指令設定中斷點 ==>  (gdb) break 18
+(3)輸入 run 指令執行程式 ==>  (gdb) run
+(4)使用 watch 指令，透過設定一個觀察string2[size-i]變數值的觀察點來觀察錯誤在何時、何地發生．
+    (gdb) watch string2[size-i]
+(5)用 next 指令來一步步的執行for 迴圈 ==> (gdb)next
+(6)經過第一次迴圈後,gdb 顯示string2[size-1]的值是'h'，==>正是我們要的
+(7)後來數次迴圈圍的結果也全部正確。
+   當i= 10 時，運算式“string2[size-i]的值等於‘e’   size-i的值等於 1 ==>最後一個字元已經到新字串裡了。
+   如果繼續將迴圈執行下去，會看到原字元陣列已經沒有值賦給string2[0] 
+   而它是新字串的第1 個字元。因為malloc 函數在分配記憶體時把它們初始化為空（null）字元，
+   所以string2 的第1個字元是空字元。這就解釋了為什麼在列印string2 時沒有任何輸出了。
+``` 
+### 修改程式
+```
+==>應將程式碼裡寫入string2 的第1 個字元的偏移量改為size-1 ，而不是size 。
+   這是因為string2 的大小為12 ，但起始偏移量是0 ，串內字元從偏移量0到偏移量10 ，偏移量11 為空字元保留。
+   為了使程式碼正常工作， 可以另設一個字串的實際大小 小l 的變數。
+
+(1)在gdb 下使用shell 指令，利用vim(gedit) 修改原始檔案：
+(gdb) shell vim test4.c
+```
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void my_print(char *string){
+  printf("The string is %s\n", string);
+}
+
+void my_print2 (char *string){
+   char *string2;
+   int size, size2, i;   /* 增加size2  */
+   size = strlen(string);
+   size2 = size-1;     /* 增加 size2  */
+   
+   string2 = (char*) malloc(size+ 1); 
+  
+    for(i = 0; i < size; i++)
+       string2[size2-i]= string[i];  /* 改成 size2  */
+       
+    string2[size+1] = '\0' ;      /* ==>結束符號*/
+    
+    printf("The string printed backward is %s \n ", string2);
+}
+
+int main (void){
+    char my_string[] = "hello there"; 
+    my_print(my_string);
+    my_print2(my_string);
+    return 0;
+}
+```
+```
+(2)使用shell 指令重新編譯原始檔案。
+(gdb) shell gcc -g test4.c -o test4
+
+(3)執行程式。
+(gdb)r
 ```
