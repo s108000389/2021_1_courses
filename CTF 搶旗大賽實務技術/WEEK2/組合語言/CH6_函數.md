@@ -29,17 +29,17 @@ movl $1, %eax
 movl $0, %ebx
 int $0x80
 
-_sum:
+_sum:   ===================>被呼叫的函數
 push %ebp
 mov %esp, %ebp
 push %ebx
 
 mov 8(%ebp), %ebx
 mov 12(%ebp), %eax
-add %ebx, %eax
+add %ebx, %eax ===================>加法運算  %ebx + %eax -->%eax 
 pop %ebx
 pop %ebp
-ret
+ret     ===================>回傳值就是 %eax 暫存器的數值
 
 .end
 ```
