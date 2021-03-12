@@ -1,4 +1,11 @@
-
+# 開發環境1
+```
+Google colab
+```
+# 開發環境建置==> anaconda
+```
+https://www.anaconda.com/
+```
 # Textbook
 ```
 The Python Workshop｜跟著實例有效學習 Python 
