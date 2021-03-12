@@ -5,6 +5,7 @@ The Python Workshop｜跟著實例有效學習 Python
 The Python Workshop : A New, Interactive Approach to Learning Python
 碁峰資訊  2020-12-21
 https://www.packtpub.com/product/the-python-workshop/9781839218859
+https://github.com/PacktWorkshops/The-Python-Workshop
 
 Chapter 1 Python 重要基礎-數學、字串、條件陳述式和迴圈
 活動1：為變數賦值
