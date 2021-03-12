@@ -92,12 +92,24 @@ int main()
 # 函數呼叫
 
 
-## objd2.c
+## func1.c
 ```
+#include <stdio.h>
+ 
+void printfme()
+{
+    print("Hello CTFer");
+}
+ 
+int main ()
+{
+   printfme();
+   return 0;
+}
 
 ```
 
-## objd2.c
+## func2.c
 ```
 #include <stdio.h>
 
@@ -128,7 +140,7 @@ int max(int num1, int num2)
    return result; 
 }
 ```
-### RECURSIVE FUNCTION 遞迴函數
+### RECURSIVE FUNCTION 遞迴函數 func3.c
 ```
 #include <stdio.h>
  
