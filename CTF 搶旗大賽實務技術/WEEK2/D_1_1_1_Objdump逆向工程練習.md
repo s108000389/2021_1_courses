@@ -1,11 +1,15 @@
-#
+# objd1.c
+```
+// objd1.c
+int main()
+{
+   return 0;
+}
+
 ```
 
-
 ```
-
-```
-
+gcc -g objd1.c -o objd1
 ```
 
 ```
