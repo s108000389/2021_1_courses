@@ -24,8 +24,49 @@ Section
 每個 section 對應一個特定用途
 .text (code) / .data / .rodata / .bss
 ```
+```
+Runtime執行時期
 
+Binary (ELF) 中部份 segment 會被建立
+內容來自檔案裡 (FileSiz)，也有可能是要一塊空的記憶體 (MemSiz)
+實際上會消耗以 page (4096 bytes) 為單位的記憶體，多的部份一樣補零
 
+Stack ==>  可能隨程式的執行而動態增減
+Heap==> 在呼叫 malloc() 時會使用到
+
+動態連結函式庫 (libraries)
+通用的函式不會被編譯進 .text (code)，而是放在公用的函式庫裡
+EX. libc.so (stdio.h, stdlib.h, string.h, …)
+```
+```
+Runtime Memory Mapping: /proc/pid/maps
+[1]讓程式在背景執行 ==>  ./a.out &
+[2]查看 process ID ==> pidof a 
+     29373
+[3]再查看 ==>cat /proc/29373/maps
+```
+```
+執行流程 ==>程式執行細節  組合語言說了算!
+1.Entrypoint: _start
+2.libc_start_main(main)
+3.main(argc, argv)
+4.Sub function calls (if any)
+5.exit(0)
+```
+```
+函式呼叫流程 (x86)
+
+1.設定呼叫時參數
+64 位元: 直接放在特定 register 上 (rdi, rsi, rdx, rcx, r8, r9)
+32 位元: 依序放在 stack 上
+
+2.使用 call 指令來呼叫函式
+3.執行被呼叫的函式 (callee)
+4.執行完後，使用 return 指令返回呼叫點的下一條指令
+5.繼續執行原函式 (caller)
+![image](https://user-images.githubusercontent.com/37649784/110990720-a8888700-83ae-11eb-8dea-a6085cec498e.png)
+
+```
 # 學習資源與推薦書
 ```
 Binary Hacks － 駭客秘傳技巧一百招
