@@ -152,7 +152,17 @@ int  main()
 
 ## objd2.c
 ```
-
+#include <stdio.h>
+ 
+int main ()
+{
+    int var_CTF = 10;
+    int *p;             
+    p = &var_CTF;
+ 
+   printf("var_CTF ADDRESS@MEMORY： %p\n", p);
+   return 0;
+}
 ```
 
 
