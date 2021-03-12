@@ -1,7 +1,10 @@
-B_5_linux 工具測試.MD
-# B_5_binary分析CTF實戰.MD
+# B_5_binary分析CTF實戰
 ```
+0-1.EasyCTF_hexedit
+0-2.EasyCTF_Hexable
 
+1-1.Reverse   ==> file + string
+1-3.林思辰_find ==> file + string
 
 ```
 
