@@ -4,12 +4,12 @@
 # Sum Program - GAS, Clang/LLVM on Linux (32-bit)
 # Copyright (c) 2017 Hall & Slonka
 
-.data ===========>初始化的變數
-num1: .long 2
+.data ===========>初始化的變數 儲存在此區段   GAS 版本的代碼是以.data 段開頭的
+num1: .long 2     其中定義了值為2 的變數numl 以及值為4 的變數num2 。這兩個變數都是32 位元的。
 num2: .long 4
 
-.text  ===========>程式
-.globl _main, _sum
+.text  ===========>程式 儲存在此區段  包含本程式的可執行指令。
+.globl _main, _sum  ========> 聲明了兩個全域函數＿main 與＿sum
 _main:   ===============>程式入口  
 
 mov $10, %eax    ===========> %eax =10
@@ -30,8 +30,8 @@ movl $0, %ebx
 int $0x80
 
 _sum:   ===================>被呼叫的函數
-push %ebp
-mov %esp, %ebp
+push %ebp       ====> 函數序言(function prologue,函數開場）:每次呼叫函數時都要從這些入口代碼開始執行
+mov %esp, %ebp  ====> 函數序言(function prologue,函數開場）:每次呼叫函數時都要從這些入口代碼開始執行
 push %ebx
 
 mov 8(%ebp), %ebx
