@@ -4,7 +4,26 @@ ELF
 使用readelf分析ELF
 使用objdump分析ELF
 ```
-# ELF
+# ELF (Executable and Linkable Format)
+```
+https://en.wikipedia.org/wiki/Executable_and_Linkable_Format
+
+
+Unix-like 系統中一種常用的 binary 封裝格式
+以 segment + section 的方式劃出不同用途的區塊
+
+一個 segment 可以包含多個 sections
+Segment 和 section 的劃分都是編譯時決定的
+
+
+Segment
+符合記憶體的配置方式 (以 page 為單位，具特定權限)
+
+Section
+同樣特性的 section 可以集中在一個 segment 裡
+每個 section 對應一個特定用途
+.text (code) / .data / .rodata / .bss
+```
 
 
 # 學習資源與推薦書
