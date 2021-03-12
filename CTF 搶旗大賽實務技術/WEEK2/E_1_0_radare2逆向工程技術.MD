@@ -8,6 +8,12 @@ sudo apt-get install radare2
 ```
 # KALI 64 已安裝
 ```
+r2 -v
+
+radare2 3.2.1 0 @ linux-x86-64 git.
+commit: unknown build: 2019-03-02__19:36:59
+```
+```
 r2 -h
 Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
           [-s addr] [-B baddr] [-m maddr] [-c cmd] [-e k=v] file|pid|-|--|=
@@ -54,4 +60,36 @@ Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
  -x           open without exec-flag (asm.emu will not work), See io.exec
  -X           same as -e bin.usextr=false (useful for dyldcache)
  -z, -zz      do not load strings or load them even in raw
+```
+# BINARY 加載 與 退出
+```
+BINARY 加載 
+
+$ r2 ./adder
+ -- Learn pancake as if you were radare!
+[0x004004b0]> quit
+
+退出控制枱，==> 輸入 Quit 或 Exit 或按 Ctrl+D：
+```
+# 
+```
+https://www.mdeditor.tw/pl/gvNU/zh-hk
+```
+```
+r2 控制枱
+
+(1)先分析BINARY ==> 使用 aaa 命令
+
+$ r2 ./adder
+ -- Sorry, radare2 has experienced an internal error.
+[0x004004b0]>
+[0x004004b0]>
+[0x004004b0]> aaa
+
+(2)取得BINARY的基本信息  ==> iI 命令
+    二進制文件的格式（ELF、PE 等）、二進制的架構（x86、AMD、ARM 等），以及二進制是 32 位還是 64 位
+    ：
+列出二進制中存在的函數==> afl 命令
+
+使用 s main 尋找 main 函數的地址，然後運行 pdf 命令來查看反彙編的指令
 ```
