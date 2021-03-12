@@ -4,21 +4,22 @@
 # Sum Program - GAS, Clang/LLVM on Linux (32-bit)
 # Copyright (c) 2017 Hall & Slonka
 
-.data
+.data ===========>初始化的變數
 num1: .long 2
 num2: .long 4
 
-.text
+.text  ===========>程式
 .globl _main, _sum
-_main:
+_main:   ===============>程式入口  
 
-mov $10, %eax
-dec %eax
-mov $5, %ebx
+mov $10, %eax    ===========> %eax =10
+dec %eax         ===========> %eax =9
+mov $5, %ebx      ===========> %ebx =5
 
-push num2
-push num1
-call _sum
+push num2         函數呼叫  ==>先把最右邊參數值押入stack
+push num1                   ==>再把左邊參數值押入stack
+push num1                   ==>正式  呼叫函數
+call _sum                   
 add $8, %esp
 
 add %ebx, %eax
