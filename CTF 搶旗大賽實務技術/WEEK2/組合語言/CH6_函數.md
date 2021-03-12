@@ -39,7 +39,7 @@ mov 12(%ebp), %eax
 add %ebx, %eax ===================>加法運算  %ebx + %eax -->%eax 
 pop %ebx
 pop %ebp
-ret     ===================>回傳值就是 %eax 暫存器的數值
+ret     
 
 .end
 ```
