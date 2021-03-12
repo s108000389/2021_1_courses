@@ -53,6 +53,18 @@ bash run_ghidra.sh
 要一段時間
 OK
 ```
+# 執行Running Ghidra ==>GUI Mode
+```
+Navigate to <GhidraInstallDir>
+Run ghidraRun.bat (Windows) or ghidraRun (Linux or macOS)
+```
+
+```
+could not find decompiler executable decompile #1495
+https://github.com/NationalSecurityAgency/ghidra/issues/1495
+
+不支援32 位元
+```
 # 使用Ghidra解CTF
 ```
 https://github.com/ENOFLAG/writeups/blob/master/0ctf2019/sanitize.md
