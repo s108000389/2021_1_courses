@@ -96,17 +96,17 @@ int main()
 ```
 #include <stdio.h>
  
-void printfme()
+void printme()
 {
-    print("Hello CTFer");
+    printf("Hello CTFer");
 }
  
 int main ()
 {
-   printfme();
+   print
+me();
    return 0;
 }
-
 ```
 
 ## func2.c
