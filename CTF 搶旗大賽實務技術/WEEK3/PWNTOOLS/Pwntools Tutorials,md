@@ -3,3 +3,25 @@
 Pwntools Tutorials
 https://github.com/Gallopsled/pwntools-tutorial#readme
 ```
+# 基本IO功能
+```
+接收資料
+recv(n) -接收任意數量的可用字節
+recvline() -接收資料，直到遇到換行符
+recvuntil(delim) -接收資料，直到找到定界符
+recvregex(pattern) -接收資料，直到滿足正則表達式模式
+recvrepeat(timeout) -繼續接收資料，直到發生超時
+clean() -丟棄所有緩衝的資料
+
+傳送資料
+send(data) -發送資料
+sendline(line) -發送資料和換行符
+
+整數運算
+pack(int) -發送字大小的壓縮整數
+unpack() -接收和解包一個字長的整數
+```
+```
+
+
+```
