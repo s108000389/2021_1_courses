@@ -23,8 +23,32 @@ and it can be used as a backdoor.
 ```
 # ncat 
 ```
-https://nmap.org/ncat/
+安裝 ncat
+How to Use Netcat Commands with Examples
+Updated December 17, 2019by Hayk Gevorgyan 
+https://linoxide.com/install-use-netcat-command-linux/
 
+How to use Linux Netcat Command as Port Scanner
+How to Create a Simple Chat with netcat in Linux
+```
+```
+sudo apt install netcat
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  netcat
+0 upgraded, 1 newly installed, 0 to remove and 620 not upgraded.
+Need to get 9,034 B of archives.
+After this operation, 16.4 kB of additional disk space will be used.
+Err:1 http://http.kali.org/kali kali-rolling/main amd64 netcat all 1.10-41.1
+  404  Not Found [IP: 192.99.200.113 80]
+E: Failed to fetch http://http.kali.org/kali/pool/main/n/netcat/netcat_1.10-41.1_all.deb  404  Not Found [IP: 192.99.200.113 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+```
+## ncat
+```
+https://nmap.org/ncat/
 ```
 ```
 Ncat Reference Guide
@@ -79,4 +103,9 @@ hyphens in port names must be backslash escaped (e.g. 'ftp\-data').
 ```
 ```
 https://blog.csdn.net/HJF007008/article/details/52627282
+```
+```
+常見的利用型式，入侵遠端主機
+有漏洞的程式以服務 (service) 的方式在遠端主機上運作
+有開放的埠口 (port) 可以存取這個服務
 ```
