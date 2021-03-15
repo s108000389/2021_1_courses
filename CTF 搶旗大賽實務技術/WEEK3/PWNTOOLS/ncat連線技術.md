@@ -23,9 +23,16 @@ and it can be used as a backdoor.
 ```
 # ncat 
 ```
+https://nmap.org/ncat/
 
+```
+```
 Ncat Reference Guide
 https://nmap.org/book/ncat-man-options-summary.html
+```
+```
+Ncat Users' Guide
+https://nmap.org/ncat/guide/index.html
 ```
 ```
 https://nmap.org/ncat/guide/ncat-exec.html
