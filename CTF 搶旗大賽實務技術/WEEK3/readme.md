@@ -1,4 +1,24 @@
-
+# 漏洞發掘 ==> CodeQL
+```
+Security: Workshop 2 - Finding security vulnerabilities in C/C++ with CodeQL
+觀看次數：709次•2020年12月19日
+https://www.youtube.com/watch?v=eAjecQrfv3o
+```
+```
+Discover vulnerabilities with CodeQL by: Boik Su (@boik_su)
+觀看次數：124次•2020年10月20日
+https://www.youtube.com/watch?v=UDDHXBFbuqo
+```
+```
+Finding security vulnerabilities in JavaScript with CodeQL - GitHub Satellite 2020
+觀看次數：4,076次•2020年5月8日
+https://www.youtube.com/watch?v=pYzfGaLTqC0
+```
+```
+Finding security vulnerabilities in Java with CodeQL - GitHub Satellite 2020
+觀看次數：4,531次•2020年5月8日
+https://www.youtube.com/watch?v=nvCd0Ee4FgE
+```
 # 漏洞程式分析
 ```
 Secure Coding in C and C++, 2/e (Paperback)
