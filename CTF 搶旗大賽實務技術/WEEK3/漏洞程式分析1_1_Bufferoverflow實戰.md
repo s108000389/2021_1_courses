@@ -92,6 +92,125 @@ int main ()
 編譯==>  gcc test2.c -o test2
 執行 ==> ./test2
 ```
+
+## Function and The stack
+
+## 3.c
+```
+# include <stdio.h>
+# include <string.h>
+
+void function(int a, int b){
+     int array[5];
+}
+
+main()
+{
+ function(1,2);
+
+ printf("This is where the return address points”);
+}
+```
+```
+gcc -g  -mpreferred-stack-boundary=2 -ggdb 3.c -o 3
+```
+```
+gdb ./3
+GNU gdb (Ubuntu 7.11.1-0ubuntu1~16.5) 7.11.1
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i686-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./3...done.
+```
+
+```
+(gdb) disas main   ==> 反組譯 main()
+Dump of assembler code for function main:
+   0x08048490 <+0>:	push   %ebp
+   0x08048491 <+1>:	mov    %esp,%ebp
+   0x08048493 <+3>:	push   $0x2   ==> 參數傳遞2 function(1,2)
+   0x08048495 <+5>:	push   $0x1   ==> 參數傳遞1 function(1,2)
+   0x08048497 <+7>:	call   0x804846b <function> ==> 函數呼叫 function(1,2)
+   0x0804849c <+12>:	add    $0x8,%esp
+   0x0804849f <+15>:	push   $0x8048540
+   0x080484a4 <+20>:	call   0x8048330 <printf@plt>
+   0x080484a9 <+25>:	add    $0x4,%esp
+   0x080484ac <+28>:	mov    $0x0,%eax
+   0x080484b1 <+33>:	leave  
+   0x080484b2 <+34>:	ret    
+End of assembler dump.
+```
+
+```
+(gdb) 
+Dump of assembler code for function main:
+   0x08048490 <+0>:	push   %ebp
+   0x08048491 <+1>:	mov    %esp,%ebp
+   0x08048493 <+3>:	push   $0x2
+   0x08048495 <+5>:	push   $0x1
+   0x08048497 <+7>:	call   0x804846b <function>
+   0x0804849c <+12>:	add    $0x8,%esp
+   0x0804849f <+15>:	push   $0x8048540
+   0x080484a4 <+20>:	call   0x8048330 <printf@plt>
+   0x080484a9 <+25>:	add    $0x4,%esp
+   0x080484ac <+28>:	mov    $0x0,%eax
+   0x080484b1 <+33>:	leave  
+   0x080484b2 <+34>:	ret    
+End of assembler dump.
+
+```
+
+## 4.c
+```
+# include <stdio.h>
+# include <string.h>
+
+void return_input (void){ 
+        char array[30]; 
+
+        gets (array); 
+        printf("%s\n", array); 
+
+}
+
+
+int main() { 
+        return_input(); 
+
+        return 0; 
+
+}
+```
+```
+gcc -g  -mpreferred-stack-boundary=2 -ggdb 4.c -o 4
+
+4.c: In function ‘return_input’:
+4.c:7:9: warning: implicit declaration of function ‘gets’ [-Wimplicit-function-declaration]
+         gets (array); 
+         ^
+/tmp/ccDtRgm3.o: In function `return_input':
+/home/ksu/shellcoder/4.c:7: warning: the `gets' function is dangerous and should not be used.
+
+
+https://stackoverflow.com/questions/1214365/disable-warning-the-gets-function-is-dangerous-in-gcc-through-header-files/27431134#27431134
+-fno-stack-protector
+
+```
+
+
+
+
+
 ##
 ```
 // shell.c
@@ -105,9 +224,10 @@ int main(){
 }
 ```
 
-##
+## victim.c
 ```
-// victim.c
+# include <string.h>
+
 int main(int argc,char *argv[])
 {
    char little_array[512];
@@ -116,6 +236,9 @@ int main(int argc,char *argv[])
       strcpy(little_array,argv[1]);
 }
 ```
+
+
+## shellcode.c
 ```
 // shellcode.c
 char shellcode[] =    
@@ -197,39 +320,9 @@ int main( int argc, char *argv[] )
    return 0;
 }
 ```
-## 3.c
-```
-
-void function(int a, int b){
-     int array[5];
-}
-
-main()
-{
- function(1,2);
-
- printf("This is where the return address points”);
-}
-```
-
-## 4.c
-```
-void return_input (void){ 
-        char array[30]; 
-
-        gets (array); 
-        printf("%s\n", array); 
-
-}
 
 
-main() { 
-        return_input(); 
 
-        return 0; 
-
-}
-```
 
 ## 5.c
 ```
