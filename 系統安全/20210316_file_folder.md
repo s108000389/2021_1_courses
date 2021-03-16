@@ -5,6 +5,12 @@
 How to Manage File System ACLs with PowerShell Scripts
 https://blog.netwrix.com/2018/04/18/how-to-manage-file-system-acls-with-powershell-scripts/
 ```
+
+```
+https://blog.netwrix.com/2018/04/18/how-to-manage-file-system-acls-with-powershell-scripts/
+https://exchangepedia.com/2017/11/get-file-or-folder-permissions-using-powershell.html
+https://blog.netwrix.com/2018/04/18/how-to-manage-file-system-acls-with-powershell-scripts/
+```
 # help get-acl
 ```
 help get-acl
