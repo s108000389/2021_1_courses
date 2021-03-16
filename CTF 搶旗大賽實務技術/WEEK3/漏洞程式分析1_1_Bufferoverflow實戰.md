@@ -152,21 +152,7 @@ End of assembler dump.
 ```
 
 ```
-(gdb) 
-Dump of assembler code for function main:
-   0x08048490 <+0>:	push   %ebp
-   0x08048491 <+1>:	mov    %esp,%ebp
-   0x08048493 <+3>:	push   $0x2
-   0x08048495 <+5>:	push   $0x1
-   0x08048497 <+7>:	call   0x804846b <function>
-   0x0804849c <+12>:	add    $0x8,%esp
-   0x0804849f <+15>:	push   $0x8048540
-   0x080484a4 <+20>:	call   0x8048330 <printf@plt>
-   0x080484a9 <+25>:	add    $0x4,%esp
-   0x080484ac <+28>:	mov    $0x0,%eax
-   0x080484b1 <+33>:	leave  
-   0x080484b2 <+34>:	ret    
-End of assembler dump.
+
 
 ```
 
@@ -207,8 +193,24 @@ https://stackoverflow.com/questions/1214365/disable-warning-the-gets-function-is
 
 ```
 
+```
+./4
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Segmentation fault (core dumped)
+```
+```
+For the core file to be produced, we need to configure the RLIMIT_CORE (core file size) resource limit for the process, 
+which is set to 0 by default.
 
+To change this setting we can use the ulimit command:
 
+# ulimit -c unlimited
+```
+
+```
+http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
+```
 
 
 ##
