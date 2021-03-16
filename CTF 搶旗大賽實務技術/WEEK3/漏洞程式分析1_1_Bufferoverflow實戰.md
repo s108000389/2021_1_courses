@@ -151,10 +151,7 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
-```
 
-
-```
 
 ## 4.c
 ```
@@ -194,12 +191,31 @@ https://stackoverflow.com/questions/1214365/disable-warning-the-gets-function-is
 ```
 
 ```
-./4
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-Segmentation fault (core dumped)
+./4  <===程式執行
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  <===輸入40個大寫A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA  <===輸出
+Segmentation fault (core dumped) <=== 當機
 ```
+### Crashes and Core Dumps
 ```
+A “core dump” is a snapshot of memory at the instant the program crashed, typically saved in a file called “core”. 
+GDB can read the core dump and give you the line number of the crash, the arguments that were passed, and more. 
+This is very helpful, but remember to compile with (-g) or the core dump will be difficult to debug.
+
+https://betterexplained.com/articles/debugging-with-gdb/
+```
+### 配置作業系統使其產生core檔案
+```
+首先通過ulimit命令檢視一下系統是否配置支援了dump core的功能。
+通過ulimit -c或ulimit -a，可以檢視core file大小的配置情況，
+如果為0，則表示系統關閉了dump core。
+可以通過ulimit -c unlimited來開啟。
+若發生了段錯誤，但沒有core dump，是由於系統禁止core檔案的生成。
+
+解決方法:
+$ulimit -c unlimited　　（只對當前shell程序有效）
+或在~/.bashrc　的最後加入： ulimit -c unlimited （一勞永逸）
+
 For the core file to be produced, we need to configure the RLIMIT_CORE (core file size) resource limit for the process, 
 which is set to 0 by default.
 
@@ -208,10 +224,48 @@ To change this setting we can use the ulimit command:
 # ulimit -c unlimited
 ```
 
+### linux ulimit使用技術[簡單作業]
+```
+https://linuxhint.com/linux_ulimit_command/
+
+ulimit -a
+ 
+ 
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15684
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15684
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+```
+
 ```
 http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
 ```
+```
+https://codertw.com/%E4%BC%BA%E6%9C%8D%E5%99%A8/155928/
 
+
+https://stackoverflow.com/questions/1214365/disable-warning-the-gets-function-is-dangerous-in-gcc-through-header-files/27431134#27431134
+
+-fno-stack-protector is an option that allows the gets() function to be used in spite of how unsafe it is.
+
+-Wno-deprecated-declarations turns off the deprecation warning
+
+Here's an example of compiling with gets()
+
+gcc myprogram.c -o myprogram -fno-stack-protector -Wno-deprecated-declarations
+```
 
 ##
 ```
