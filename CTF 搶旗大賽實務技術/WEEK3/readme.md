@@ -32,3 +32,10 @@ https://www.tenlong.com.tw/products/9787111442790
 mparisi20/secure-coding-in-c-and-cpp
 https://github.com/mparisi20/secure-coding-in-c-and-cpp
 ```
+
+```
+Secure Coding in C/C++ with James Taguchi
+https://github.com/psanch/coen225
+
+完成 lab 實作
+```
