@@ -5,6 +5,61 @@
 How to Manage File System ACLs with PowerShell Scripts
 https://blog.netwrix.com/2018/04/18/how-to-manage-file-system-acls-with-powershell-scripts/
 ```
+# help get-acl
+```
+help get-acl
+
+NAME
+    Get-Acl
+
+SYNTAX
+    Get-Acl [[-Path] <string[]>] [-Audit] [-AllCentralAccessPolicies] [-Filter <string>] [-Include <string[]>]
+    [-Exclude <string[]>] [-UseTransaction]  [<CommonParameters>]
+
+    Get-Acl -InputObject <psobject> [-Audit] [-AllCentralAccessPolicies] [-Filter <string>] [-Include <string[]>]
+    [-Exclude <string[]>] [-UseTransaction]  [<CommonParameters>]
+
+    Get-Acl [-LiteralPath <string[]>] [-Audit] [-AllCentralAccessPolicies] [-Filter <string>] [-Include <string[]>]
+    [-Exclude <string[]>] [-UseTransaction]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Get-Acl -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113305.
+```
+```
+help set-acl
+
+NAME
+    Set-Acl
+
+SYNTAX
+    Set-Acl [-Path] <string[]> [-AclObject] <Object> [[-CentralAccessPolicy] <string>] [-ClearCentralAccessPolicy] [-Passthru] [-Filter <string>]
+    [-Include <string[]>] [-Exclude <string[]>] [-WhatIf] [-Confirm] [-UseTransaction]  [<CommonParameters>]
+
+    Set-Acl [-InputObject] <psobject> [-AclObject] <Object> [-Passthru] [-Filter <string>] [-Include <string[]>] [-Exclude <string[]>] [-WhatIf]
+    [-Confirm] [-UseTransaction]  [<CommonParameters>]
+
+    Set-Acl [-AclObject] <Object> [[-CentralAccessPolicy] <string>] -LiteralPath <string[]> [-ClearCentralAccessPolicy] [-Passthru] [-Filter
+    <string>] [-Include <string[]>] [-Exclude <string[]>] [-WhatIf] [-Confirm] [-UseTransaction]  [<CommonParameters>]
+
+
+ALIASES
+    None
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Set-Acl -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113389.
+```
 ```
 NTFS Permissions Types for Files and Folders
 
