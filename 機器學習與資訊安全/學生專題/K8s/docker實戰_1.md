@@ -32,7 +32,9 @@ https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpi
 ```
 
 ## 作業:建置與測試redis 資料庫
-
+```
+https://hub.docker.com/_/redis
+```
 ```
 獲取redis鏡像 ==> sudo docker pull redis
 
