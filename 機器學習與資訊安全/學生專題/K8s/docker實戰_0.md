@@ -3,6 +3,8 @@
 Docker + Kubernetes 應用開發與快速上雲
 李文強著   機械工業   2020-04-01
 https://www.3dwoo.com/showBookDetail.asp?nb=52549
+
+https://github.com/xin-lai/docker-k8s
 ```
 
 ```
