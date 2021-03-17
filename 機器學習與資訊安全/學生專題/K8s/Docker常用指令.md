@@ -1,27 +1,35 @@
 # Docker常用指令
 ```
 https://docs.docker.com/
+
+command line 命列列指令
+https://docs.docker.com/engine/reference/commandline/cli/
+
+
+docker 命列列指令
+sudo docker 命列列指令
 ```
+#
 ```
 
-登錄
-4.1.1 OPTIONS說明49
-4.1.2 登錄Docker Hub49
-4.1.3 登錄到騰訊雲鏡像倉庫50
+```
+# 
+```
+登錄  
+登錄Docker Hub
+
 
 拉取鏡像
-4.2.1 OPTIONS說明51
-4.2.2 從Docker Hub拉取鏡像51
-4.2.3 從騰訊雲鏡像倉庫拉取鏡像52
+從Docker Hub拉取鏡像
+從私有Hub拉取鏡像
 
 
 列出本地鏡像
-4.3.1 OPTIONS說明53
-4.3.2 按名稱和標簽列出鏡像54
-4.3.3 篩選55
-4.4 運行鏡像58
-4.4.1 OPTIONS說明58
-4.4.2 簡單運行60
+按名稱和標簽列出鏡像
+篩選
+
+執行鏡像
+
 
 列出容器
 4.5.1 OPTIONS說明61
