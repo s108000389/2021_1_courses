@@ -10,9 +10,6 @@ docker exec
 A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size!
 https://hub.docker.com/_/alpine
 
-docker pull alpine
-
-
 Alpine Linux is a Linux distribution built around musl libc and BusyBox. 
 The image is only 5 MB in size and has access to a package repository 
 that is much more complete than other BusyBox based images. 
@@ -21,7 +18,46 @@ This makes Alpine Linux a great image base for utilities and even production app
 Read more about Alpine Linux here and you can see how their mantra fits in right at home with Docker images.
 ```
 ```
+docker pull alpine
+
+docker run -it --rm alpine /bin/ash
+(inside container) / # 
+
+/bin/ash is Ash (Almquist Shell) provided by BusyBox
+--rm Automatically remove the container when it exits (docker run --help)
+-i Interactive mode (Keep STDIN open even if not attached)
+-t Allocate a pseudo-TTY
+
+https://stackoverflow.com/questions/35689628/starting-a-shell-in-the-docker-alpine-container
+```
+
+## 作業:建置與測試redis 資料庫
+
+```
 獲取redis鏡像 ==> sudo docker pull redis
+
+How To Deploy And Run Redis In Docker
+https://phoenixnap.com/kb/docker-redis
+
+啟動一個Docker Redis Container  
+
+先檢查 ==> sudo systemctl status docker
+
+啟動一個Redis container (名字叫做 my-first-redis) 
+ ==> sudo docker run --name my-first-redis -d redis
+
+sudo docker ps  
+==> 查看 The unique container ID 
+         Access Port – 6379 (default Redis port number)
+         The defined container name
+
+使用 redis-cli連線到 Redis 伺服器 
+==> sudo docker exec -it my-first-redis sh
+
+在sh環境 redis-cli
+
+Access Redis from Another Docker Container
+
 ```
 
 ```
